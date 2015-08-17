@@ -1,0 +1,20 @@
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\bin\Debug\Test.exe
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\bin\Debug\Test.pdb
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\bin\Debug\ConsoleUI.dll
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\bin\Debug\ConsoleUI.pdb
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\Test.Form1.resources
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\Test.Properties.Resources.resources
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\WiFiMCU.csproj.GenerateResource.Cache
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\Test.exe
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\Test.pdb
+D:\0 Doit\2 WiFiMCU\0 3165\IDE示例\ConsuleUI\ConsuleUI\Test\obj\x86\Debug\WiFiMCU.csprojResolveAssemblyReference.cache
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\Test.exe
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\Test.pdb
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\bin\Debug\Test.exe
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\bin\Debug\Test.pdb
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\bin\Debug\ConsoleUI.dll
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\bin\Debug\ConsoleUI.pdb
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\WiFiMCU.csprojResolveAssemblyReference.cache
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\Test.main.resources
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\Test.Properties.Resources.resources
+D:\0 doit\3165\0 wifimcu\IDE\ConsuleUI\Test\obj\x86\Debug\WiFiMCU.csproj.GenerateResource.Cache
