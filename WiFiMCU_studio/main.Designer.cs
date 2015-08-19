@@ -132,6 +132,9 @@
             this.btnFormat = new System.Windows.Forms.Button();
             this.btnUpload = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.radioButtonWlanDrv = new System.Windows.Forms.RadioButton();
+            this.radioButtonBtloader = new System.Windows.Forms.RadioButton();
+            this.radioButtonFW = new System.Windows.Forms.RadioButton();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnSendFW = new System.Windows.Forms.Button();
@@ -157,9 +160,6 @@
             this.btnMCUTick = new System.Windows.Forms.Button();
             this.txtSP = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.radioButtonFW = new System.Windows.Forms.RadioButton();
-            this.radioButtonBtloader = new System.Windows.Forms.RadioButton();
-            this.radioButtonWlanDrv = new System.Windows.Forms.RadioButton();
             this.contextMenuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1389,6 +1389,41 @@
             this.tabPage4.TabIndex = 2;
             this.tabPage4.Text = "Firmware";
             // 
+            // radioButtonWlanDrv
+            // 
+            this.radioButtonWlanDrv.AutoSize = true;
+            this.radioButtonWlanDrv.Font = new System.Drawing.Font("Times New Roman", 15F);
+            this.radioButtonWlanDrv.Location = new System.Drawing.Point(155, 223);
+            this.radioButtonWlanDrv.Name = "radioButtonWlanDrv";
+            this.radioButtonWlanDrv.Size = new System.Drawing.Size(128, 26);
+            this.radioButtonWlanDrv.TabIndex = 3;
+            this.radioButtonWlanDrv.Text = "Wlan Driver";
+            this.radioButtonWlanDrv.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonBtloader
+            // 
+            this.radioButtonBtloader.AutoSize = true;
+            this.radioButtonBtloader.Font = new System.Drawing.Font("Times New Roman", 15F);
+            this.radioButtonBtloader.Location = new System.Drawing.Point(155, 183);
+            this.radioButtonBtloader.Name = "radioButtonBtloader";
+            this.radioButtonBtloader.Size = new System.Drawing.Size(117, 26);
+            this.radioButtonBtloader.TabIndex = 3;
+            this.radioButtonBtloader.Text = "Bootloader";
+            this.radioButtonBtloader.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonFW
+            // 
+            this.radioButtonFW.AutoSize = true;
+            this.radioButtonFW.Checked = true;
+            this.radioButtonFW.Font = new System.Drawing.Font("Times New Roman", 15F);
+            this.radioButtonFW.Location = new System.Drawing.Point(155, 145);
+            this.radioButtonFW.Name = "radioButtonFW";
+            this.radioButtonFW.Size = new System.Drawing.Size(106, 26);
+            this.radioButtonFW.TabIndex = 3;
+            this.radioButtonFW.TabStop = true;
+            this.radioButtonFW.Text = "Firmware";
+            this.radioButtonFW.UseVisualStyleBackColor = true;
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -1510,6 +1545,7 @@
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Check Update: www.doit.am";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // pictureBox1
             // 
@@ -1693,41 +1729,6 @@
             this.txtSP.UseSystemPasswordChar = true;
             this.txtSP.WordWrap = false;
             this.txtSP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSP_KeyPress);
-            // 
-            // radioButtonFW
-            // 
-            this.radioButtonFW.AutoSize = true;
-            this.radioButtonFW.Checked = true;
-            this.radioButtonFW.Font = new System.Drawing.Font("Times New Roman", 15F);
-            this.radioButtonFW.Location = new System.Drawing.Point(155, 145);
-            this.radioButtonFW.Name = "radioButtonFW";
-            this.radioButtonFW.Size = new System.Drawing.Size(106, 26);
-            this.radioButtonFW.TabIndex = 3;
-            this.radioButtonFW.TabStop = true;
-            this.radioButtonFW.Text = "Firmware";
-            this.radioButtonFW.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonBtloader
-            // 
-            this.radioButtonBtloader.AutoSize = true;
-            this.radioButtonBtloader.Font = new System.Drawing.Font("Times New Roman", 15F);
-            this.radioButtonBtloader.Location = new System.Drawing.Point(155, 183);
-            this.radioButtonBtloader.Name = "radioButtonBtloader";
-            this.radioButtonBtloader.Size = new System.Drawing.Size(117, 26);
-            this.radioButtonBtloader.TabIndex = 3;
-            this.radioButtonBtloader.Text = "Bootloader";
-            this.radioButtonBtloader.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonWlanDrv
-            // 
-            this.radioButtonWlanDrv.AutoSize = true;
-            this.radioButtonWlanDrv.Font = new System.Drawing.Font("Times New Roman", 15F);
-            this.radioButtonWlanDrv.Location = new System.Drawing.Point(155, 223);
-            this.radioButtonWlanDrv.Name = "radioButtonWlanDrv";
-            this.radioButtonWlanDrv.Size = new System.Drawing.Size(128, 26);
-            this.radioButtonWlanDrv.TabIndex = 3;
-            this.radioButtonWlanDrv.Text = "Wlan Driver";
-            this.radioButtonWlanDrv.UseVisualStyleBackColor = true;
             // 
             // main
             // 

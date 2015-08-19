@@ -1315,6 +1315,11 @@ namespace WiFiMCU
                 }
                 MessageBox.Show(this, "Upload Firmware Abort!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://en.doit.am/");  
         }   
     }
 }
