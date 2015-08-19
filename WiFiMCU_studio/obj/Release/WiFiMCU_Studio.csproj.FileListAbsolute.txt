@@ -1,0 +1,7 @@
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\bin\Release\WiFiMCU.exe.config
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\bin\Release\WiFiMCU.exe
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\obj\Release\WiFiMCU.fileNewNameDialog.resources
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\obj\Release\WiFiMCU.main.resources
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\obj\Release\WiFiMCU.Properties.Resources.resources
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\obj\Release\WiFiMCU_Studio.csproj.GenerateResource.Cache
+D:\0 Doit\2 WiFiMCU\0 3165\1 IDE\WiFiMCU Studio_2015年8月18日2\WiFiMCU STUDIO\WiFiMCU_studio\obj\Release\WiFiMCU.exe
