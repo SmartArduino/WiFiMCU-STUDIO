@@ -10,8 +10,11 @@ or www.wifimcu.com
 Doctors of Intelligence & Technology (Doit.am)
 support@doit.am
 
+2015-8-20
+Close the opened serial port in case of error
+
 2015-8-19
-Add Firmware tabpage.
+Add Firmware tabpage
 
 2015-8-17
 Initial upload

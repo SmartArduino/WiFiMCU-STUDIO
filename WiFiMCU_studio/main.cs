@@ -115,6 +115,7 @@ namespace WiFiMCU
                 catch (System.Exception ex)
                 {
                     ex.ToString();
+                    MessageBox.Show("AsyncReceiveData");
                 }
                 
             }
@@ -277,6 +278,20 @@ namespace WiFiMCU
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (btnOpenPort.Text == "Close"&& serialPort1.IsOpen==false)
+            {
+                    serialPort1.Close();
+                    fileIsUploading = false;
+                    bIsGetingFileList = false;
+                    bUploadingFirmware = false;
+                    btnOpenPort.Text = "Open";
+                    btnOpenPort.BackColor = Color.Gold;
+                    comboBoxSerialPort.Enabled = true;
+                    this.btnScanPort.Enabled = true;
+                    this.btnScanPort.BackColor = Color.DarkOrchid;
+                    toolStripStatusLabelSerialPort.Text = "Error Detected, Close serial port!";
+                    MessageBox.Show(this, "Serial Port Error Detected, Serial Port closed", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             if (strSerialBuff.Length>0 && Environment.TickCount - lastgetSerialBuffTick>300)
             {
                 //txtSP.AppendText(strSerialBuff);
@@ -358,7 +373,6 @@ namespace WiFiMCU
             try
             {
                 Button btn1 = btnOpenPort;
-                
                 ComboBox cmbox = comboBoxSerialPort;
                 if (!serialPort1.IsOpen)
                 {
@@ -1319,7 +1333,7 @@ namespace WiFiMCU
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://en.doit.am/");  
+            System.Diagnostics.Process.Start("http://en.doit.am/");
         }   
     }
 }

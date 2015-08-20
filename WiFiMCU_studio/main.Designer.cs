@@ -1539,12 +1539,12 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(405, 312);
+            this.linkLabel1.Location = new System.Drawing.Point(164, 312);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(172, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(303, 16);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Check Update: www.doit.am";
+            this.linkLabel1.Text = "WiFi STUDIO (v1.0.3)Check Update: www.doit.am";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // pictureBox1
