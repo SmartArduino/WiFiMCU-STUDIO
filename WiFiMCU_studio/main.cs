@@ -904,7 +904,7 @@ namespace WiFiMCU
         private void btnADCRead_Click(object sender, EventArgs e)
         {
             int[] arry = new int[] { 1, 13, 15, 16, 17 };
-            sendData2SerialPort("=adc.read(" + arry[comboBoxPWMPin.SelectedIndex].ToString() + ")\r\n");
+            sendData2SerialPort("=adc.read(" + arry[comboBoxADCPin.SelectedIndex].ToString() + ")\r\n");
         }
 
         private void btnHigh_Click(object sender, EventArgs e)
