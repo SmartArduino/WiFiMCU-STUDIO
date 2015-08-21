@@ -924,7 +924,7 @@ namespace WiFiMCU
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            sendData2SerialPort("=gpio.read(" + cbGPIOPin.SelectedIndex.ToString()+"\r\n");
+            sendData2SerialPort("=gpio.read(" + cbGPIOPin.SelectedIndex.ToString()+")\r\n");
         }
 
         private void btnTmrStopAll_Click(object sender, EventArgs e)
