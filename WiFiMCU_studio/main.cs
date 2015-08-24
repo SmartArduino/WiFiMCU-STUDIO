@@ -796,15 +796,15 @@ namespace WiFiMCU
                 }
                 if (cbGPIOMode.SelectedIndex==8)
                 {
-                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'rising',function() print(gpio.read(pin)) end)\r\n");
+                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'rising',function() print(gpio.read(" + cbGPIOPin.SelectedIndex.ToString() + ")) end)\r\n");
                 }
                 else if (cbGPIOMode.SelectedIndex == 9)
                 {
-                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'falling',function() print(gpio.read(pin)) end)\r\n");
+                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'falling',function() print(gpio.read(" + cbGPIOPin.SelectedIndex.ToString() + ")) end)\r\n");
                 }
                 else if (cbGPIOMode.SelectedIndex == 10)
                 {
-                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'both',function() print(gpio.read(pin)) end)\r\n");
+                    sendData2SerialPort("gpio.mode(" + cbGPIOPin.SelectedIndex.ToString() + ",gpio.INT,'both',function() print(gpio.read(" + cbGPIOPin.SelectedIndex.ToString() + ")) end)\r\n");
                 }                
             }
         }
