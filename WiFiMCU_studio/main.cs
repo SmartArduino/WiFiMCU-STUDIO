@@ -40,7 +40,8 @@ namespace WiFiMCU
             toolStripStatusLabel2.Text = "";
 
             getInitFile();
-
+            toolStripStatusLabel3.Text = "Send: ";
+            toolStripStatusLabel4.Text = "Recv: ";
         }
         private void main_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -99,10 +100,44 @@ namespace WiFiMCU
                 hexString.AppendFormat("{0:X2}", Convert.ToByte(str[i]));
             return hexString.ToString();
         }
+        private static string StringToHexString2(string s, bool fenge)
+        {
+            if ((s.Length % 2) != 0)
+            {
+                 s += " ";//空格
+                //throw new ArgumentException("s is not valid chinese string!");
+             }
+             System.Text.Encoding chs = System.Text.Encoding.GetEncoding("utf-8");
+            byte[] bytes = chs.GetBytes(s);
+            string str = "";
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                str += string.Format("{0:X}", bytes[i]);
+                if (fenge && (i != bytes.Length - 1))
+                {
+                     str += string.Format("{0}", ",");
+                 }
+             }
+            return str.ToLower();
+        }
+
+        public static string byteToHexStr(byte[] bytes)
+        {
+            string returnStr = "";
+            if (bytes != null)
+            {
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    returnStr += bytes[i].ToString("X2");
+                }
+            }
+            return returnStr;
+        }
 
         public delegate void AsyReceiveDataHandler();
         String strSerialBuff = "";
         long lastgetSerialBuffTick = 0;
+        UInt32 recvSerData = 0;
         private void AsyncReceiveData()
         {
             if (this.InvokeRequired)
@@ -114,8 +149,8 @@ namespace WiFiMCU
                 }
                 catch (System.Exception ex)
                 {
-                    ex.ToString();
-                    MessageBox.Show("AsyncReceiveData");
+                    Console.WriteLine(ex.ToString());
+                    MessageBox.Show("InvokeRequired" + ex.ToString());
                 }
                 
             }
@@ -130,7 +165,13 @@ namespace WiFiMCU
                 }
                 else
                 {
-                    strTemp = serialPort1.ReadExisting().ToString();
+                     int ilen = serialPort1.BytesToRead;
+                     byte[]   bytes = new byte[ilen];
+                     serialPort1.Read(bytes, 0, ilen);
+                     strTemp = System.Text.Encoding.UTF8.GetString(bytes);
+                    
+                    //Console.WriteLine(strTemp);
+                    //Console.WriteLine(byteToHexStr(bytes));
                 }
 #endregion
                 if (bReqUploadingFirmware==true && strTemp == "C")
@@ -139,28 +180,30 @@ namespace WiFiMCU
                     bUploadingFirmware = true;
                     Console.WriteLine("Start uploading...");
                 }
-                //Console.WriteLine(strTemp);
-                #region  dealwith backspace
-                string backspaceStr = StringToHexString(strTemp);
-                //Console.WriteLine(backspaceStr);
-                if ((strTemp.Length == 1 && backspaceStr == "08") ||
-                    (strTemp.Length == 2 && backspaceStr == "2008") ||
-                    (strTemp.Length == 3 && backspaceStr == "082008"))
+
+#region  dealwith backspace
+                string backspaceStr = StringToHexString2(strTemp,false);
+                if (backspaceStr == "820820")
                 {
                     if (Environment.TickCount - lastBackSpaceTimeTick < 50) return;
                     lastBackSpaceTimeTick = Environment.TickCount;
+
                     txtSP.Text = txtSP.Text.Remove(txtSP.Text.Length - 1, 1);
                     this.txtSP.SelectionStart = this.txtSP.Text.Length;
+                    this.txtSP.SelectionLength = 0;
                     this.txtSP.ScrollToCaret();
                     return;
                 }
-                #endregion
+#endregion
 
                 if (!fileIsUploading &&
                     !bIsGetingFileList)
                 {
-                    strTemp = strTemp.Replace("\n\r", "\r\n");
+                    strTemp = strTemp.Replace("\r\n", "\n");
+                    strTemp = strTemp.Replace("\n", "\r\n");
                     this.txtSP.AppendText(strTemp);
+                    recvSerData = recvSerData + (UInt32)strTemp.Length;
+                    toolStripStatusLabel4.Text = "Recv: " + recvSerData.ToString();
                 }
                 if (strTemp.IndexOf("\r\n")<0)
                 {
@@ -173,70 +216,71 @@ namespace WiFiMCU
                         strSerialBuff.IndexOf("file.remove") >= 0 ||
                         strSerialBuff.IndexOf("file.compile") >= 0)
                     this.btnFilelist.PerformClick();
-
-#region dealwith uploading
-                if (fileIsUploading == true)
-                {
-                    //Console.WriteLine(strSerialBuff);
-                    if (strSerialBuff.IndexOf("stdin:1") >= 0)
+                
+                    #region dealwith uploading
+                    if (fileIsUploading == true)
                     {
-                        fileIsUploading = false;
-                        toolStripStatusLabel1.Text = "Upload file failed";
-                        this.btnUpload.Text = "Upload";
-                        sendData2SerialPort("\r\n");
-                        txtSP.AppendText("\r\n Error happened, stop download!\r\n");
-                        MessageBox.Show(this, "File: '" + fileUploadFileName + "' upload failed", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                        //this.btnFilelist.PerformClick();
+                        //Console.WriteLine(strSerialBuff);
+                        if (strSerialBuff.IndexOf("stdin:1") >= 0)
+                        {
+                            fileIsUploading = false;
+                            toolStripStatusLabel1.Text = "Upload file failed";
+                            this.btnUpload.Text = "Upload";
+                            sendData2SerialPort("\r\n");
+                            txtSP.AppendText("\r\n Error happened, stop download!\r\n");
+                            MessageBox.Show(this, "File: '" + fileUploadFileName + "' upload failed", "Stop", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            //this.btnFilelist.PerformClick();
+                            strSerialBuff = "";
+                            return;
+                        }
+                        if (indexFileData == stringFileData.Length)
+                        {//send ok
+                            sendData2SerialPort("file.close();s=nil;\r\n");
+                            indexFileData++;
+                            txtSP.AppendText(".");
+                            //txtSP.AppendText(strSerialBuff);
+                            toolStripProgressBar1.Value = 99;
+                            toolStripStatusLabel2.Text = "99%";
+                        }
+                        else if (indexFileData > stringFileData.Length)
+                        {
+                            fileIsUploading = false;
+                            txtSP.AppendText("\r\n-->Upload file: '" + fileUploadFileName + "' successful<--\r\n");
+                            sendData2SerialPort("\r\n");
+                            //this.Enabled = true;
+                            toolStripStatusLabel1.Text = "Upload Successfully";
+                            toolStripProgressBar1.Value = 100;
+                            toolStripStatusLabel2.Text = "100%";
+                            this.btnUpload.Text = "Upload";
+                            this.btnFilelist.PerformClick();
+                        }
+                        else
+                        {
+                            String sdata = stringFileData[indexFileData++];
+                            fileUploadTimeTick = Environment.TickCount;
+                            //Thread.Sleep(10);
+                            //txtSP.AppendText("Recieve: " + strSerialBuff);
+                            //txtSP.AppendText("Send: s(\'" + sdata + "')\r\n");
+                            //Console.WriteLine("Recieve: " + strSerialBuff);
+                            //Console.WriteLine("Send: s(\'" + sdata + "')\r\n");
+                            if (txtSP.Lines[txtSP.Lines.Length - 1].Length > 30)
+                            {
+                                txtSP.AppendText("\r\n");
+                            }
+                            txtSP.AppendText(".");
+                            string strData = "s('" + sdata + "')\r\n";
+                            Thread.Sleep(50);
+                            sendData2SerialPortUtf8(strData);
+
+                            string pg = string.Format("{0:G}", indexFileData * 100 / stringFileData.Length);
+                            toolStripProgressBar1.Value = indexFileData * 100 / stringFileData.Length;
+                            toolStripStatusLabel2.Text = pg + "%";
+                        }
                         strSerialBuff = "";
                         return;
                     }
-                    if (indexFileData == stringFileData.Length)
-                    {//send ok
-                        sendData2SerialPort("file.close();s=nil;\r\n");
-                        indexFileData++;
-                        txtSP.AppendText(".");
-                        //txtSP.AppendText(strSerialBuff);
-                        toolStripProgressBar1.Value = 99;
-                        toolStripStatusLabel2.Text = "99%";
-                    }
-                    else if (indexFileData > stringFileData.Length)
-                    {
-                        fileIsUploading = false;
-                        txtSP.AppendText("\r\n-->Upload file: '" + fileUploadFileName + "' successful<--\r\n");
-                        sendData2SerialPort("\r\n");
-                        //this.Enabled = true;
-                        toolStripStatusLabel1.Text = "Upload Successfully";
-                        toolStripProgressBar1.Value = 100;
-                        toolStripStatusLabel2.Text = "100%";
-                        this.btnUpload.Text = "Upload";
-                        this.btnFilelist.PerformClick();
-                    }
-                    else
-                    {
-                        String sdata = stringFileData[indexFileData++];
-                        fileUploadTimeTick = Environment.TickCount;
-                        //Thread.Sleep(10);
-                        //txtSP.AppendText("Recieve: " + strSerialBuff);
-                        //txtSP.AppendText("Send: s(\'" + sdata + "')\r\n");
-                        //Console.WriteLine("Recieve: " + strSerialBuff);
-                        //Console.WriteLine("Send: s(\'" + sdata + "')\r\n");
-                        if (txtSP.Lines[txtSP.Lines.Length - 1].Length > 30)
-                        {
-                            txtSP.AppendText("\r\n");
-                        }
-                        txtSP.AppendText(".");
-                        string strData = "s('" + sdata + "')\r\n";
-                        Thread.Sleep(50);
-                        sendData2SerialPort(strData);
-                        
-                        string pg = string.Format("{0:G}", indexFileData * 100 / stringFileData.Length);
-                        toolStripProgressBar1.Value = indexFileData * 100 / stringFileData.Length;
-                        toolStripStatusLabel2.Text = pg + "%";
-                    }
-                    strSerialBuff = "";
-                    return;
-                }
-#endregion
+                    #endregion
+
 #region dealwith geting filelist
                 if (bIsGetingFileList == true)
                 {
@@ -262,7 +306,7 @@ namespace WiFiMCU
         {
             txtSP.Copy();
         }
-
+        //中文中文
         private void paste_Click(object sender, EventArgs e)
         {
             IDataObject data = Clipboard.GetDataObject();
@@ -435,7 +479,12 @@ namespace WiFiMCU
         {
             txtSP.Clear();
             sendData2SerialPort("\r\n");
+            sendSerData = 0;
+            recvSerData = 0;
+            toolStripStatusLabel3.Text = "Send: ";
+            toolStripStatusLabel4.Text = "Recv: ";
         }
+        UInt32 sendSerData = 0;
         private void sendData2SerialPort(String d)
         {
             if (this.serialPort1.IsOpen == false)
@@ -446,6 +495,30 @@ namespace WiFiMCU
             try
             {
                 this.serialPort1.Write(d);
+                sendSerData = sendSerData + (UInt32)d.Length;
+                toolStripStatusLabel3.Text = "Send: "+sendSerData.ToString();
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }
+        private void sendData2SerialPortUtf8(String d)
+        {
+            if (this.serialPort1.IsOpen == false)
+            {
+                txtSP.AppendText("\r\n-->Serial Port is not Opened<--\r\n");
+                return;
+            }
+            try
+            {
+               //this.serialPort1.Write(d);
+                System.Text.UTF8Encoding utf8 = new System.Text.UTF8Encoding();
+                Byte[] writeBytes = utf8.GetBytes(d);
+                serialPort1.Write(writeBytes, 0, writeBytes.Length);
+
+                sendSerData = sendSerData + (UInt32)d.Length;
+                toolStripStatusLabel3.Text = "Send: "+sendSerData.ToString();
             }
             catch (Exception ex)
             {
@@ -565,9 +638,12 @@ namespace WiFiMCU
             {
                 string filePath = fd.FileName;
                 StreamReader sr = new StreamReader(filePath);
+                //StreamReader sr = new StreamReader(filePath, Encoding.UTF8);
+                //StreamReader sr = new StreamReader(filePath, System.Text.Encoding.UTF8, true);
                 string content = sr.ReadToEnd();
+                Console.WriteLine(content);
                 sr.Close();
-                content = content.Replace("'", "\\'");
+                content = content.Replace("'", "\\'");//
                 content = content.Replace("\"", "\\\"");
                 stringFileData = content.Split(new string[] { "\r\n" }, StringSplitOptions.None);
                 indexFileData=0;
@@ -1144,25 +1220,25 @@ namespace WiFiMCU
             fileStream = new FileStream(@path, FileMode.Open, FileAccess.Read);
 
             if (uploadType==0&&
-                (fileStream.Length<250*1024||
+                (fileStream.Length<230*1024||
                 fileStream.Length>512*1024))
              {
-                 MessageBox.Show(this, "The length of WiFiMCU Firmware should between 250k~512k", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                 return;
+                 MessageBox.Show(this, "The length of WiFiMCU Firmware should between 230k~512k\r\nPlease be careful", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                 //return;
              }
             if (uploadType == 1 &&
                 (fileStream.Length < 10 * 1024 ||
                 fileStream.Length > 30 * 1024))
             {
-                MessageBox.Show(this, "The length of WiFiMCU Bootloader should between 10k~30k", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show(this, "The length of WiFiMCU Bootloader should between 10k~30k\r\nPlease be careful", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //return;
             }
             if (uploadType == 2 &&
                 (fileStream.Length < 200 * 1024 ||
                 fileStream.Length > 210 * 1024))
             {
-                MessageBox.Show(this, "The length of WiFiMCU Wlan Driver should between 200k~210k", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show(this, "The length of WiFiMCU Wlan Driver should between 200k~210k\r\nPlease be careful", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //return;
             }
             btnSendFW.Text = "Abort";
             uploadingFWStage = (int)FWStage.WaitForStart1;
@@ -1256,6 +1332,7 @@ namespace WiFiMCU
                     uploadingFWStage = (int)FWStage.Closing3;
                     serialPort1.Write(new byte[] { EOT }, 0, 1);
                     Console.WriteLine("EOT1");
+                    fileStream.Close();
                     return;
                 }
                 uploadingFWStage = (int)FWStage.SendingData;
