@@ -10,6 +10,16 @@ www.wifimcu.com<br/>
 
 Doctors of Intelligence & Technology (Doit.am)<br/>
 support@doit.am<br/>
+
+####Version log<br/>
+#####v2.0 @2015-12-14<br/>
+(under beta version)<br/>
+* Update to metro theme, Support change theme and color for main dialog
+* Enhance serial port reading function
+* Speed up uploading lua scripts
+* Record input histroy
+* Add uart module test demos
+  
 2015-11-30(v1.0.6)<br/>
 1, Replace stop dialog to warning dialog in case checking file size of binary files<br/>
 2, Close filestream after send files
