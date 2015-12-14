@@ -1,0 +1,54 @@
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe.config
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.exe
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.Demo.pdb
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.Design.dll
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.dll
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\bin\Debug\MetroFramework.Fonts.dll
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.MainForm.resources
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.TestForm1.resources
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\WiFiMCU STUDIO.csproj.GenerateResource.Cache
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.exe
+E:\sw\WiFiMCU STUDIO\MetroFramework.Demo\obj\Debug\MetroFramework.Demo.pdb
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.exe.config
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.exe
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.pdb
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.exe
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.pdb
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Design.dll
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.dll
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Fonts.dll
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCU STUDIO.csprojResolveAssemblyReference.cache
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.MainForm.resources
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.TestForm1.resources
+E:\sw\WiFiMCU STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCU STUDIO.csproj.GenerateResource.Cache
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.exe.config
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.exe
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.pdb
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.exe
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.Demo.pdb
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.Design.dll
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.dll
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\bin\Debug\MetroFramework.Fonts.dll
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\WiFiMCU STUDIO.csprojResolveAssemblyReference.cache
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.MainForm.resources
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.Properties.Resources.resources
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.TaskWindowControl.resources
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\MetroFramework.Demo.TestForm1.resources
+E:\0 workspace\2 wifimcu\WiFiMCU STUDIO metro\WiFiMCU STUDIO\obj\Debug\WiFiMCU STUDIO.csproj.GenerateResource.Cache
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\WiFiMCU_Studio.exe.config
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\WiFiMCU_Studio.exe
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\WiFiMCU_Studio.pdb
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Design.dll
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.dll
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\bin\Debug\MetroFramework.Fonts.dll
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.WiFiMCU.MainForm.resources
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCUStudio.Properties.Resources.resources
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.WiFiMCU.TaskWindowControl.resources
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\MetroFramework.WiFiMCU.TestForm1.resources
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCU STUDIO.csproj.GenerateResource.Cache
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCU_Studio.exe
+D:\0 Workspace\WiFiMCU_STUDIO\WiFiMCU STUDIO\obj\Debug\WiFiMCU_Studio.pdb
