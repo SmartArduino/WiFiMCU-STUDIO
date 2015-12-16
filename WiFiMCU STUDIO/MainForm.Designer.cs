@@ -135,6 +135,8 @@ namespace MetroFramework.WiFiMCU
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage6 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTextBoxInfo = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroStyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroToolTip = new MetroFramework.Components.MetroToolTip();
             this.comboBoxSerialBaudrate = new MetroFramework.Controls.MetroComboBox();
@@ -163,8 +165,6 @@ namespace MetroFramework.WiFiMCU
             this.txtSPBack = new MetroFramework.Controls.MetroTextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBoxInfo = new MetroFramework.Controls.MetroTextBox();
             this.metroTab.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
@@ -188,7 +188,7 @@ namespace MetroFramework.WiFiMCU
             this.metroTab.Location = new System.Drawing.Point(8, 190);
             this.metroTab.Margin = new System.Windows.Forms.Padding(4);
             this.metroTab.Name = "metroTab";
-            this.metroTab.SelectedIndex = 4;
+            this.metroTab.SelectedIndex = 1;
             this.metroTab.Size = new System.Drawing.Size(656, 596);
             this.metroTab.TabIndex = 0;
             this.metroTab.UseSelectable = true;
@@ -1709,6 +1709,38 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage6.VerticalScrollbarSize = 13;
             this.metroTabPage6.Visible = false;
             // 
+            // metroTextBoxInfo
+            // 
+            this.metroTextBoxInfo.BackColor = System.Drawing.Color.YellowGreen;
+            this.metroTextBoxInfo.IconRight = true;
+            this.metroTextBoxInfo.Lines = new string[0];
+            this.metroTextBoxInfo.Location = new System.Drawing.Point(25, 97);
+            this.metroTextBoxInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxInfo.MaxLength = 32767;
+            this.metroTextBoxInfo.Multiline = true;
+            this.metroTextBoxInfo.Name = "metroTextBoxInfo";
+            this.metroTextBoxInfo.PasswordChar = '\0';
+            this.metroTextBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBoxInfo.SelectedText = "";
+            this.metroTextBoxInfo.Size = new System.Drawing.Size(587, 321);
+            this.metroTextBoxInfo.TabIndex = 20;
+            this.metroToolTip.SetToolTip(this.metroTextBoxInfo, "Set timer period");
+            this.metroTextBoxInfo.UseSelectable = true;
+            this.metroTextBoxInfo.UseStyleColors = true;
+            // 
+            // metroLabel14
+            // 
+            this.metroLabel14.AutoSize = true;
+            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel14.Location = new System.Drawing.Point(103, 53);
+            this.metroLabel14.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.Size = new System.Drawing.Size(355, 19);
+            this.metroLabel14.TabIndex = 12;
+            this.metroLabel14.Text = "WiFiMCU is an open source project based on EMW3165";
+            this.metroLabel14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.metroLabel14.UseStyleColors = true;
+            // 
             // metroStyleManager
             // 
             this.metroStyleManager.Owner = this;
@@ -2041,38 +2073,6 @@ namespace MetroFramework.WiFiMCU
             this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // metroLabel14
-            // 
-            this.metroLabel14.AutoSize = true;
-            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel14.Location = new System.Drawing.Point(103, 53);
-            this.metroLabel14.Margin = new System.Windows.Forms.Padding(4);
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(355, 19);
-            this.metroLabel14.TabIndex = 12;
-            this.metroLabel14.Text = "WiFiMCU is an open source project based on EMW3165";
-            this.metroLabel14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.metroLabel14.UseStyleColors = true;
-            // 
-            // metroTextBoxInfo
-            // 
-            this.metroTextBoxInfo.BackColor = System.Drawing.Color.YellowGreen;
-            this.metroTextBoxInfo.IconRight = true;
-            this.metroTextBoxInfo.Lines = new string[0];
-            this.metroTextBoxInfo.Location = new System.Drawing.Point(25, 97);
-            this.metroTextBoxInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.metroTextBoxInfo.MaxLength = 32767;
-            this.metroTextBoxInfo.Multiline = true;
-            this.metroTextBoxInfo.Name = "metroTextBoxInfo";
-            this.metroTextBoxInfo.PasswordChar = '\0';
-            this.metroTextBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBoxInfo.SelectedText = "";
-            this.metroTextBoxInfo.Size = new System.Drawing.Size(587, 321);
-            this.metroTextBoxInfo.TabIndex = 20;
-            this.metroToolTip.SetToolTip(this.metroTextBoxInfo, "Set timer period");
-            this.metroTextBoxInfo.UseSelectable = true;
-            this.metroTextBoxInfo.UseStyleColors = true;
-            // 
             // MainForm
             // 
             this.ApplyImageInvert = true;
@@ -2110,6 +2110,7 @@ namespace MetroFramework.WiFiMCU
             this.StyleManager = this.metroStyleManager;
             this.Text = "WiFiMCU Studio  V2.0";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.metroTab.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);

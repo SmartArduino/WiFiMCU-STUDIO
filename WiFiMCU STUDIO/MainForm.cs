@@ -27,7 +27,7 @@ namespace MetroFramework.WiFiMCU
         private void MainForm_Load(object sender, EventArgs e)
         {
             metroTileScan.PerformClick();
-            comboBoxSerialBaudrate.SelectedIndex = 0;
+            getInitFile();
             metroTab.SelectTab(metroTabPage4);
             scanPort(30);
             SetLineSpace(txtSP, 8);
@@ -40,6 +40,76 @@ namespace MetroFramework.WiFiMCU
             metroTextBoxInfo.AppendText("Docs:\r\n  https://github.com/SmartArduino/WiFiMCU/tree/master/Document\r\n");
             metroTextBoxInfo.AppendText("Demos:\r\n  https://github.com/SmartArduino/WiFiMCU/tree/master/Demos\r\n");
             metroTextBoxInfo.AppendText("Discussion:\r\n  bbs.doit.am\r\n  bbs.smartarduino.com\r\n  www.emw3165.com");
+        }
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            saveInitFile();
+        }
+        private void getInitFile()
+        {
+            IniFileClass p = new IniFileClass(".\\para.ini");
+            try
+            {
+                comboBoxSerialPort.SelectedIndex = int.Parse(p.IniReadValue("page0", "comboBoxSerialPort", "0"));
+            }
+            catch (System.Exception ex)
+            {
+                ex.ToString();
+            }
+            comboBoxSerialBaudrate.SelectedIndex = int.Parse(p.IniReadValue("page0", "comboBoxSerialBaudrate", "0"));
+            metroComboBoxTimerID.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxTimerID", "0"));
+            metroComboBoxGPIOPin.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxGPIOPin", "0"));
+            metroComboBoxGPIOMode.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxGPIOMode", "0"));
+            metroComboBoxPWMPin.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxPWMPin", "0"));
+            metroComboBoxADCPin.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxADCPin", "0"));
+            metroComboBoxUart.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxUart", "0"));
+            metroComboBoxBaud.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxBaud", "0"));
+            metroComboBoxBits.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxBits", "0"));
+            metroComboBoxParity.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxParity", "0"));
+            metroComboBoxStop.SelectedIndex = int.Parse(p.IniReadValue("page0", "metroComboBoxStop", "0"));
+            metroTextBoxPeriod.Text = p.IniReadValue("page0", "metroTextBoxPeriod", "1000");
+            metroTextBoxFreq.Text = p.IniReadValue("page0", "metroTextBoxFreq", "10000");
+            metroTextBoxDuty.Text = p.IniReadValue("page0", "metroTextBoxDuty", "50");
+            metroTextBoxUartData.Text = p.IniReadValue("page0", "metroTextBoxUartData", "50");
+
+            textBoxAPSSID.Text = p.IniReadValue("page1", "textBoxAPSSID", "WiFiMCU_SoftAP");
+            textBoxAPPSW.Text = p.IniReadValue("page1", "textBoxAPPSW", "");
+            textBoxSTASSID.Text = p.IniReadValue("page1", "textBoxSTASSID", "Wireless_Router");
+            textBoxSTAPSW.Text = p.IniReadValue("page1", "textBoxSTAPSW", "");
+            textBoxBindLoadPort.Text = p.IniReadValue("page1", "textBoxBindLoadPort", "9000");
+            textBoxIP.Text = p.IniReadValue("page1", "textBoxIP", "192.168.1.100");
+            labelPort.Text = p.IniReadValue("page1", "labelPort", "9001");
+            textBoxSendData.Text = p.IniReadValue("page1", "textBoxSendData", "");
+        }
+        private void saveInitFile()
+        {
+            IniFileClass p = new IniFileClass(".\\para.ini");
+            p.IniWriteValue("page0", "comboBoxSerialPort", comboBoxSerialPort.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "comboBoxSerialBaudrate", comboBoxSerialBaudrate.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxTimerID", metroComboBoxTimerID.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxGPIOPin", metroComboBoxGPIOPin.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxGPIOMode", metroComboBoxGPIOMode.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxPWMPin", metroComboBoxPWMPin.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxADCPin", metroComboBoxADCPin.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxUart", metroComboBoxUart.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxBaud", metroComboBoxBaud.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxBits", metroComboBoxBits.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxParity", metroComboBoxParity.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroComboBoxStop", metroComboBoxStop.SelectedIndex.ToString());
+            p.IniWriteValue("page0", "metroTextBoxPeriod", metroTextBoxPeriod.Text);
+            p.IniWriteValue("page0", "metroTextBoxFreq", metroTextBoxFreq.Text);
+            p.IniWriteValue("page0", "metroTextBoxDuty", metroTextBoxDuty.Text);
+            p.IniWriteValue("page0", "metroTextBoxUartData", metroTextBoxUartData.Text);
+
+            p.IniWriteValue("page1", "textBoxAPSSID", textBoxAPSSID.Text);
+            p.IniWriteValue("page1", "textBoxAPPSW", textBoxAPPSW.Text);
+            p.IniWriteValue("page1", "textBoxSTASSID", textBoxSTASSID.Text);
+            p.IniWriteValue("page1", "textBoxSTAPSW", textBoxSTAPSW.Text);
+            p.IniWriteValue("page1", "textBoxBindLoadPort", textBoxBindLoadPort.Text);
+            p.IniWriteValue("page1", "textBoxIP", textBoxIP.Text);
+            p.IniWriteValue("page1", "labelPort", labelPort.Text);
+            p.IniWriteValue("page1", "textBoxSendData", textBoxSendData.Text);
+
         }
 #region setRichtextboxlineheight
         private const int WM_USER = 0x0400;
@@ -1493,29 +1563,5 @@ namespace MetroFramework.WiFiMCU
             sendData2SerialPort("net.send(skt,'" + this.textBoxSendData.Text + "')\r\n");
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
     }
 }
