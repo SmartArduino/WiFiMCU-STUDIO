@@ -54,7 +54,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>Resources\wifimcu-logo.ico</ApplicationIcon>
+    <ApplicationIcon>wifimcu_64.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -149,8 +149,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\doit-logo.png" />
-    <None Include="Resources\wifimcu-logo.ico" />
+    <Content Include="doit_64X64.ico" />
+    <Content Include="Resources\doit_64X64.ico" />
+    <Content Include="Resources\wifimcu_64.ico" />
+    <Content Include="wifimcu_64.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

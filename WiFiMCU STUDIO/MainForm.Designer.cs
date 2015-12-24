@@ -156,6 +156,7 @@ namespace MetroFramework.WiFiMCU
             this.ClearHistory = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Restart = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroButtonSupport = new MetroFramework.Controls.MetroButton();
             this.metroStyleExtender = new MetroFramework.Components.MetroStyleExtender(this.components);
             this.metroLabelCom = new MetroFramework.Controls.MetroLabel();
             this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
@@ -185,11 +186,10 @@ namespace MetroFramework.WiFiMCU
             this.metroTab.Controls.Add(this.metroTabPage4);
             this.metroTab.Controls.Add(this.metroTabPage2);
             this.metroTab.Controls.Add(this.metroTabPage6);
-            this.metroTab.Location = new System.Drawing.Point(8, 190);
-            this.metroTab.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTab.Location = new System.Drawing.Point(6, 152);
             this.metroTab.Name = "metroTab";
             this.metroTab.SelectedIndex = 1;
-            this.metroTab.Size = new System.Drawing.Size(656, 596);
+            this.metroTab.Size = new System.Drawing.Size(492, 477);
             this.metroTab.TabIndex = 0;
             this.metroTab.UseSelectable = true;
             // 
@@ -237,32 +237,30 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage1.HorizontalScrollbar = true;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 11;
+            this.metroTabPage1.HorizontalScrollbarSize = 9;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 39);
-            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Padding = new System.Windows.Forms.Padding(33, 29, 33, 29);
-            this.metroTabPage1.Size = new System.Drawing.Size(648, 553);
+            this.metroTabPage1.Padding = new System.Windows.Forms.Padding(25, 23, 25, 23);
+            this.metroTabPage1.Size = new System.Drawing.Size(484, 434);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "   Basic   ";
             this.metroTabPage1.VerticalScrollbar = true;
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 13;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
             // metroTextBoxUartData
             // 
             this.metroTextBoxUartData.IconRight = true;
             this.metroTextBoxUartData.Lines = new string[0];
-            this.metroTextBoxUartData.Location = new System.Drawing.Point(30, 501);
-            this.metroTextBoxUartData.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxUartData.Location = new System.Drawing.Point(22, 401);
             this.metroTextBoxUartData.MaxLength = 32767;
             this.metroTextBoxUartData.Name = "metroTextBoxUartData";
             this.metroTextBoxUartData.PasswordChar = '\0';
             this.metroTextBoxUartData.PromptText = "Text to be send to uart";
             this.metroTextBoxUartData.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxUartData.SelectedText = "";
-            this.metroTextBoxUartData.Size = new System.Drawing.Size(476, 38);
+            this.metroTextBoxUartData.Size = new System.Drawing.Size(357, 30);
             this.metroTextBoxUartData.TabIndex = 19;
             this.metroToolTip.SetToolTip(this.metroTextBoxUartData, "Text to be send to uart");
             this.metroTextBoxUartData.UseSelectable = true;
@@ -272,15 +270,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTextBoxDuty.IconRight = true;
             this.metroTextBoxDuty.Lines = new string[0];
-            this.metroTextBoxDuty.Location = new System.Drawing.Point(30, 379);
-            this.metroTextBoxDuty.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxDuty.Location = new System.Drawing.Point(22, 303);
             this.metroTextBoxDuty.MaxLength = 32767;
             this.metroTextBoxDuty.Name = "metroTextBoxDuty";
             this.metroTextBoxDuty.PasswordChar = '\0';
             this.metroTextBoxDuty.PromptText = "Duty";
             this.metroTextBoxDuty.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxDuty.SelectedText = "";
-            this.metroTextBoxDuty.Size = new System.Drawing.Size(106, 38);
+            this.metroTextBoxDuty.Size = new System.Drawing.Size(80, 30);
             this.metroTextBoxDuty.TabIndex = 19;
             this.metroToolTip.SetToolTip(this.metroTextBoxDuty, "PWM Duty (0~100)");
             this.metroTextBoxDuty.UseSelectable = true;
@@ -290,15 +287,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTextBoxFreq.IconRight = true;
             this.metroTextBoxFreq.Lines = new string[0];
-            this.metroTextBoxFreq.Location = new System.Drawing.Point(30, 334);
-            this.metroTextBoxFreq.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxFreq.Location = new System.Drawing.Point(22, 267);
             this.metroTextBoxFreq.MaxLength = 32767;
             this.metroTextBoxFreq.Name = "metroTextBoxFreq";
             this.metroTextBoxFreq.PasswordChar = '\0';
             this.metroTextBoxFreq.PromptText = "Freq(Hz)";
             this.metroTextBoxFreq.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxFreq.SelectedText = "";
-            this.metroTextBoxFreq.Size = new System.Drawing.Size(105, 38);
+            this.metroTextBoxFreq.Size = new System.Drawing.Size(79, 30);
             this.metroTextBoxFreq.TabIndex = 19;
             this.metroToolTip.SetToolTip(this.metroTextBoxFreq, "PWM Frequency(Hz)");
             this.metroTextBoxFreq.UseSelectable = true;
@@ -308,15 +304,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTextBoxPeriod.IconRight = true;
             this.metroTextBoxPeriod.Lines = new string[0];
-            this.metroTextBoxPeriod.Location = new System.Drawing.Point(312, 81);
-            this.metroTextBoxPeriod.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxPeriod.Location = new System.Drawing.Point(234, 65);
             this.metroTextBoxPeriod.MaxLength = 32767;
             this.metroTextBoxPeriod.Name = "metroTextBoxPeriod";
             this.metroTextBoxPeriod.PasswordChar = '\0';
             this.metroTextBoxPeriod.PromptText = "Period(ms)";
             this.metroTextBoxPeriod.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxPeriod.SelectedText = "";
-            this.metroTextBoxPeriod.Size = new System.Drawing.Size(125, 38);
+            this.metroTextBoxPeriod.Size = new System.Drawing.Size(94, 30);
             this.metroTextBoxPeriod.TabIndex = 19;
             this.metroToolTip.SetToolTip(this.metroTextBoxPeriod, "Set timer period");
             this.metroTextBoxPeriod.UseSelectable = true;
@@ -338,11 +333,10 @@ namespace MetroFramework.WiFiMCU
             "gpio.INT(rising edge)",
             "gpio.INT(falling edge)",
             "gpio.INT(both edges)"});
-            this.metroComboBoxGPIOMode.Location = new System.Drawing.Point(136, 164);
-            this.metroComboBoxGPIOMode.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxGPIOMode.Location = new System.Drawing.Point(102, 131);
             this.metroComboBoxGPIOMode.Name = "metroComboBoxGPIOMode";
             this.metroComboBoxGPIOMode.PromptText = "GPIO Mode";
-            this.metroComboBoxGPIOMode.Size = new System.Drawing.Size(435, 30);
+            this.metroComboBoxGPIOMode.Size = new System.Drawing.Size(327, 30);
             this.metroComboBoxGPIOMode.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxGPIOMode.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxGPIOMode, "GPIO Mode");
@@ -358,11 +352,10 @@ namespace MetroFramework.WiFiMCU
             "15 pwm/adc",
             "16 pwm/adc",
             "17 adc/led"});
-            this.metroComboBoxADCPin.Location = new System.Drawing.Point(386, 295);
-            this.metroComboBoxADCPin.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxADCPin.Location = new System.Drawing.Point(290, 236);
             this.metroComboBoxADCPin.Name = "metroComboBoxADCPin";
             this.metroComboBoxADCPin.PromptText = "ADC Pin";
-            this.metroComboBoxADCPin.Size = new System.Drawing.Size(125, 30);
+            this.metroComboBoxADCPin.Size = new System.Drawing.Size(95, 30);
             this.metroComboBoxADCPin.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxADCPin.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxADCPin, "ADC Pin");
@@ -375,11 +368,10 @@ namespace MetroFramework.WiFiMCU
             this.metroComboBoxStop.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.metroComboBoxStop.Location = new System.Drawing.Point(365, 460);
-            this.metroComboBoxStop.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxStop.Location = new System.Drawing.Point(274, 368);
             this.metroComboBoxStop.Name = "metroComboBoxStop";
             this.metroComboBoxStop.PromptText = "Stop";
-            this.metroComboBoxStop.Size = new System.Drawing.Size(68, 30);
+            this.metroComboBoxStop.Size = new System.Drawing.Size(52, 30);
             this.metroComboBoxStop.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxStop.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxStop, "Uart Stopbits");
@@ -393,11 +385,10 @@ namespace MetroFramework.WiFiMCU
             "n",
             "o",
             "e"});
-            this.metroComboBoxParity.Location = new System.Drawing.Point(282, 460);
-            this.metroComboBoxParity.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxParity.Location = new System.Drawing.Point(212, 368);
             this.metroComboBoxParity.Name = "metroComboBoxParity";
             this.metroComboBoxParity.PromptText = "Parity";
-            this.metroComboBoxParity.Size = new System.Drawing.Size(68, 30);
+            this.metroComboBoxParity.Size = new System.Drawing.Size(52, 30);
             this.metroComboBoxParity.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxParity.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxParity, "Uart Parity");
@@ -411,11 +402,10 @@ namespace MetroFramework.WiFiMCU
             "4800",
             "9600",
             "115200"});
-            this.metroComboBoxBaud.Location = new System.Drawing.Point(114, 460);
-            this.metroComboBoxBaud.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxBaud.Location = new System.Drawing.Point(86, 368);
             this.metroComboBoxBaud.Name = "metroComboBoxBaud";
             this.metroComboBoxBaud.PromptText = "Baud";
-            this.metroComboBoxBaud.Size = new System.Drawing.Size(66, 30);
+            this.metroComboBoxBaud.Size = new System.Drawing.Size(50, 30);
             this.metroComboBoxBaud.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxBaud.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxBaud, "Uart Baudrate");
@@ -431,11 +421,10 @@ namespace MetroFramework.WiFiMCU
             "7",
             "8",
             "9"});
-            this.metroComboBoxBits.Location = new System.Drawing.Point(191, 460);
-            this.metroComboBoxBits.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxBits.Location = new System.Drawing.Point(143, 368);
             this.metroComboBoxBits.Name = "metroComboBoxBits";
             this.metroComboBoxBits.PromptText = "Bits";
-            this.metroComboBoxBits.Size = new System.Drawing.Size(73, 30);
+            this.metroComboBoxBits.Size = new System.Drawing.Size(56, 30);
             this.metroComboBoxBits.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxBits.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxBits, "Uart Databits");
@@ -447,11 +436,10 @@ namespace MetroFramework.WiFiMCU
             this.metroComboBoxUart.ItemHeight = 24;
             this.metroComboBoxUart.Items.AddRange(new object[] {
             "1"});
-            this.metroComboBoxUart.Location = new System.Drawing.Point(30, 460);
-            this.metroComboBoxUart.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxUart.Location = new System.Drawing.Point(22, 368);
             this.metroComboBoxUart.Name = "metroComboBoxUart";
             this.metroComboBoxUart.PromptText = "Uart";
-            this.metroComboBoxUart.Size = new System.Drawing.Size(66, 30);
+            this.metroComboBoxUart.Size = new System.Drawing.Size(50, 30);
             this.metroComboBoxUart.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxUart.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxUart, "Uart Index");
@@ -473,11 +461,10 @@ namespace MetroFramework.WiFiMCU
             "14 pwm",
             "15 pwm/adc",
             "16 pwm/adc"});
-            this.metroComboBoxPWMPin.Location = new System.Drawing.Point(30, 295);
-            this.metroComboBoxPWMPin.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxPWMPin.Location = new System.Drawing.Point(22, 236);
             this.metroComboBoxPWMPin.Name = "metroComboBoxPWMPin";
             this.metroComboBoxPWMPin.PromptText = "PWM Pin";
-            this.metroComboBoxPWMPin.Size = new System.Drawing.Size(105, 30);
+            this.metroComboBoxPWMPin.Size = new System.Drawing.Size(80, 30);
             this.metroComboBoxPWMPin.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxPWMPin.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxPWMPin, "PWM Pin");
@@ -506,11 +493,10 @@ namespace MetroFramework.WiFiMCU
             "15 pwm/adc",
             "16 pwm/adc",
             "17 adc/led"});
-            this.metroComboBoxGPIOPin.Location = new System.Drawing.Point(30, 164);
-            this.metroComboBoxGPIOPin.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxGPIOPin.Location = new System.Drawing.Point(22, 131);
             this.metroComboBoxGPIOPin.Name = "metroComboBoxGPIOPin";
             this.metroComboBoxGPIOPin.PromptText = "GPIO Pin";
-            this.metroComboBoxGPIOPin.Size = new System.Drawing.Size(105, 30);
+            this.metroComboBoxGPIOPin.Size = new System.Drawing.Size(80, 30);
             this.metroComboBoxGPIOPin.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxGPIOPin.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxGPIOPin, "GPIO Pin");
@@ -537,11 +523,10 @@ namespace MetroFramework.WiFiMCU
             "Tmr 13",
             "Tmr 14",
             "Tmr 15"});
-            this.metroComboBoxTimerID.Location = new System.Drawing.Point(312, 40);
-            this.metroComboBoxTimerID.Margin = new System.Windows.Forms.Padding(4);
+            this.metroComboBoxTimerID.Location = new System.Drawing.Point(234, 32);
             this.metroComboBoxTimerID.Name = "metroComboBoxTimerID";
             this.metroComboBoxTimerID.PromptText = "Timer ID";
-            this.metroComboBoxTimerID.Size = new System.Drawing.Size(123, 30);
+            this.metroComboBoxTimerID.Size = new System.Drawing.Size(93, 30);
             this.metroComboBoxTimerID.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroComboBoxTimerID.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.metroComboBoxTimerID, "Timer ID");
@@ -550,10 +535,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonBootR
             // 
             this.metroButtonBootR.Highlight = true;
-            this.metroButtonBootR.Location = new System.Drawing.Point(31, 81);
-            this.metroButtonBootR.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonBootR.Location = new System.Drawing.Point(23, 65);
             this.metroButtonBootR.Name = "metroButtonBootR";
-            this.metroButtonBootR.Size = new System.Drawing.Size(169, 42);
+            this.metroButtonBootR.Size = new System.Drawing.Size(127, 34);
             this.metroButtonBootR.TabIndex = 6;
             this.metroButtonBootR.Text = "Boot reason";
             this.metroToolTip.SetToolTip(this.metroButtonBootR, "Get WiFiMCU Boot reason");
@@ -563,10 +547,9 @@ namespace MetroFramework.WiFiMCU
             // btnTimerStop
             // 
             this.btnTimerStop.Highlight = true;
-            this.btnTimerStop.Location = new System.Drawing.Point(520, 31);
-            this.btnTimerStop.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimerStop.Location = new System.Drawing.Point(390, 25);
             this.btnTimerStop.Name = "btnTimerStop";
-            this.btnTimerStop.Size = new System.Drawing.Size(52, 42);
+            this.btnTimerStop.Size = new System.Drawing.Size(39, 34);
             this.btnTimerStop.TabIndex = 6;
             this.btnTimerStop.Text = "Stop";
             this.metroToolTip.SetToolTip(this.btnTimerStop, "Stop timer");
@@ -576,10 +559,9 @@ namespace MetroFramework.WiFiMCU
             // btnTimerDelay
             // 
             this.btnTimerDelay.Highlight = true;
-            this.btnTimerDelay.Location = new System.Drawing.Point(520, 81);
-            this.btnTimerDelay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimerDelay.Location = new System.Drawing.Point(390, 65);
             this.btnTimerDelay.Name = "btnTimerDelay";
-            this.btnTimerDelay.Size = new System.Drawing.Size(52, 42);
+            this.btnTimerDelay.Size = new System.Drawing.Size(39, 34);
             this.btnTimerDelay.TabIndex = 6;
             this.btnTimerDelay.Text = "Delay";
             this.metroToolTip.SetToolTip(this.btnTimerDelay, "Timer Delay");
@@ -589,10 +571,9 @@ namespace MetroFramework.WiFiMCU
             // btnTimerWd
             // 
             this.btnTimerWd.Highlight = true;
-            this.btnTimerWd.Location = new System.Drawing.Point(460, 81);
-            this.btnTimerWd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimerWd.Location = new System.Drawing.Point(345, 65);
             this.btnTimerWd.Name = "btnTimerWd";
-            this.btnTimerWd.Size = new System.Drawing.Size(52, 42);
+            this.btnTimerWd.Size = new System.Drawing.Size(39, 34);
             this.btnTimerWd.TabIndex = 6;
             this.btnTimerWd.Text = "WatchDog Clear";
             this.metroToolTip.SetToolTip(this.btnTimerWd, "WatchDog Clear");
@@ -602,10 +583,9 @@ namespace MetroFramework.WiFiMCU
             // btnTimerStart
             // 
             this.btnTimerStart.Highlight = true;
-            this.btnTimerStart.Location = new System.Drawing.Point(460, 31);
-            this.btnTimerStart.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimerStart.Location = new System.Drawing.Point(345, 25);
             this.btnTimerStart.Name = "btnTimerStart";
-            this.btnTimerStart.Size = new System.Drawing.Size(52, 42);
+            this.btnTimerStart.Size = new System.Drawing.Size(39, 34);
             this.btnTimerStart.TabIndex = 6;
             this.btnTimerStart.Text = "Start";
             this.metroToolTip.SetToolTip(this.btnTimerStart, "Start timer");
@@ -615,10 +595,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonChipid
             // 
             this.metroButtonChipid.Highlight = true;
-            this.metroButtonChipid.Location = new System.Drawing.Point(137, 31);
-            this.metroButtonChipid.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonChipid.Location = new System.Drawing.Point(103, 25);
             this.metroButtonChipid.Name = "metroButtonChipid";
-            this.metroButtonChipid.Size = new System.Drawing.Size(63, 42);
+            this.metroButtonChipid.Size = new System.Drawing.Size(47, 34);
             this.metroButtonChipid.TabIndex = 6;
             this.metroButtonChipid.Text = "Chipid";
             this.metroToolTip.SetToolTip(this.metroButtonChipid, "Get WiFiMCU Chipid");
@@ -628,10 +607,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonInfo
             // 
             this.metroButtonInfo.Highlight = true;
-            this.metroButtonInfo.Location = new System.Drawing.Point(84, 31);
-            this.metroButtonInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonInfo.Location = new System.Drawing.Point(63, 25);
             this.metroButtonInfo.Name = "metroButtonInfo";
-            this.metroButtonInfo.Size = new System.Drawing.Size(45, 42);
+            this.metroButtonInfo.Size = new System.Drawing.Size(34, 34);
             this.metroButtonInfo.TabIndex = 6;
             this.metroButtonInfo.Text = "Info";
             this.metroToolTip.SetToolTip(this.metroButtonInfo, "Get WiFiMCU Information");
@@ -641,10 +619,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel9
             // 
             this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(291, 6);
-            this.metroLabel9.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel9.Location = new System.Drawing.Point(218, 5);
+            this.metroLabel9.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(112, 20);
+            this.metroLabel9.Size = new System.Drawing.Size(104, 20);
             this.metroLabel9.TabIndex = 5;
             this.metroLabel9.Text = "Timer Module";
             this.metroLabel9.UseStyleColors = true;
@@ -652,10 +630,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel26
             // 
             this.metroLabel26.AutoSize = true;
-            this.metroLabel26.Location = new System.Drawing.Point(291, 268);
-            this.metroLabel26.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel26.Location = new System.Drawing.Point(218, 214);
+            this.metroLabel26.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel26.Name = "metroLabel26";
-            this.metroLabel26.Size = new System.Drawing.Size(102, 20);
+            this.metroLabel26.Size = new System.Drawing.Size(96, 20);
             this.metroLabel26.TabIndex = 5;
             this.metroLabel26.Text = "ADC Module";
             this.metroLabel26.UseStyleColors = true;
@@ -663,10 +641,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel27
             // 
             this.metroLabel27.AutoSize = true;
-            this.metroLabel27.Location = new System.Drawing.Point(16, 434);
-            this.metroLabel27.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel27.Location = new System.Drawing.Point(12, 347);
+            this.metroLabel27.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel27.Name = "metroLabel27";
-            this.metroLabel27.Size = new System.Drawing.Size(101, 20);
+            this.metroLabel27.Size = new System.Drawing.Size(94, 20);
             this.metroLabel27.TabIndex = 5;
             this.metroLabel27.Text = "Uart Module";
             this.metroLabel27.UseStyleColors = true;
@@ -674,10 +652,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel25
             // 
             this.metroLabel25.AutoSize = true;
-            this.metroLabel25.Location = new System.Drawing.Point(16, 268);
-            this.metroLabel25.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel25.Location = new System.Drawing.Point(12, 214);
+            this.metroLabel25.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel25.Name = "metroLabel25";
-            this.metroLabel25.Size = new System.Drawing.Size(109, 20);
+            this.metroLabel25.Size = new System.Drawing.Size(103, 20);
             this.metroLabel25.TabIndex = 5;
             this.metroLabel25.Text = "PWM Module";
             this.metroLabel25.UseStyleColors = true;
@@ -685,10 +663,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(16, 6);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel1.Location = new System.Drawing.Point(12, 5);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(106, 20);
+            this.metroLabel1.Size = new System.Drawing.Size(99, 20);
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "MCU Module";
             this.metroLabel1.UseStyleColors = true;
@@ -696,10 +674,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(16, 139);
-            this.metroLabel8.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel8.Location = new System.Drawing.Point(12, 111);
+            this.metroLabel8.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(106, 20);
+            this.metroLabel8.Size = new System.Drawing.Size(100, 20);
             this.metroLabel8.TabIndex = 5;
             this.metroLabel8.Text = "GPIO Module";
             this.metroLabel8.UseStyleColors = true;
@@ -707,10 +685,9 @@ namespace MetroFramework.WiFiMCU
             // btnGPIOSetmode
             // 
             this.btnGPIOSetmode.Highlight = true;
-            this.btnGPIOSetmode.Location = new System.Drawing.Point(30, 207);
-            this.btnGPIOSetmode.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGPIOSetmode.Location = new System.Drawing.Point(22, 166);
             this.btnGPIOSetmode.Name = "btnGPIOSetmode";
-            this.btnGPIOSetmode.Size = new System.Drawing.Size(91, 42);
+            this.btnGPIOSetmode.Size = new System.Drawing.Size(68, 34);
             this.btnGPIOSetmode.TabIndex = 6;
             this.btnGPIOSetmode.Text = "Set Mode";
             this.metroToolTip.SetToolTip(this.btnGPIOSetmode, "Set GPIO Mode");
@@ -720,10 +697,9 @@ namespace MetroFramework.WiFiMCU
             // btnGPIOToggle
             // 
             this.btnGPIOToggle.Highlight = true;
-            this.btnGPIOToggle.Location = new System.Drawing.Point(245, 207);
-            this.btnGPIOToggle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGPIOToggle.Location = new System.Drawing.Point(184, 166);
             this.btnGPIOToggle.Name = "btnGPIOToggle";
-            this.btnGPIOToggle.Size = new System.Drawing.Size(77, 42);
+            this.btnGPIOToggle.Size = new System.Drawing.Size(58, 34);
             this.btnGPIOToggle.TabIndex = 6;
             this.btnGPIOToggle.Text = "Toggle";
             this.metroToolTip.SetToolTip(this.btnGPIOToggle, "Toggle GPIO output");
@@ -733,10 +709,9 @@ namespace MetroFramework.WiFiMCU
             // btnGPIOSetLow
             // 
             this.btnGPIOSetLow.Highlight = true;
-            this.btnGPIOSetLow.Location = new System.Drawing.Point(494, 207);
-            this.btnGPIOSetLow.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGPIOSetLow.Location = new System.Drawing.Point(370, 166);
             this.btnGPIOSetLow.Name = "btnGPIOSetLow";
-            this.btnGPIOSetLow.Size = new System.Drawing.Size(77, 42);
+            this.btnGPIOSetLow.Size = new System.Drawing.Size(58, 34);
             this.btnGPIOSetLow.TabIndex = 6;
             this.btnGPIOSetLow.Text = "Set Low";
             this.metroToolTip.SetToolTip(this.btnGPIOSetLow, "Set GPIO output low");
@@ -746,10 +721,9 @@ namespace MetroFramework.WiFiMCU
             // btnGPIOSetHigh
             // 
             this.btnGPIOSetHigh.Highlight = true;
-            this.btnGPIOSetHigh.Location = new System.Drawing.Point(375, 207);
-            this.btnGPIOSetHigh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGPIOSetHigh.Location = new System.Drawing.Point(281, 166);
             this.btnGPIOSetHigh.Name = "btnGPIOSetHigh";
-            this.btnGPIOSetHigh.Size = new System.Drawing.Size(77, 42);
+            this.btnGPIOSetHigh.Size = new System.Drawing.Size(58, 34);
             this.btnGPIOSetHigh.TabIndex = 6;
             this.btnGPIOSetHigh.Text = "Set High";
             this.metroToolTip.SetToolTip(this.btnGPIOSetHigh, "Set GPIO output high");
@@ -759,10 +733,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonVer
             // 
             this.metroButtonVer.Highlight = true;
-            this.metroButtonVer.Location = new System.Drawing.Point(30, 31);
-            this.metroButtonVer.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonVer.Location = new System.Drawing.Point(22, 25);
             this.metroButtonVer.Name = "metroButtonVer";
-            this.metroButtonVer.Size = new System.Drawing.Size(45, 42);
+            this.metroButtonVer.Size = new System.Drawing.Size(34, 34);
             this.metroButtonVer.TabIndex = 6;
             this.metroButtonVer.Text = "Ver";
             this.metroToolTip.SetToolTip(this.metroButtonVer, "Get wifimcu version");
@@ -772,10 +745,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonPWMStop
             // 
             this.metroButtonPWMStop.Highlight = true;
-            this.metroButtonPWMStop.Location = new System.Drawing.Point(143, 363);
-            this.metroButtonPWMStop.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonPWMStop.Location = new System.Drawing.Point(107, 290);
             this.metroButtonPWMStop.Name = "metroButtonPWMStop";
-            this.metroButtonPWMStop.Size = new System.Drawing.Size(77, 54);
+            this.metroButtonPWMStop.Size = new System.Drawing.Size(58, 43);
             this.metroButtonPWMStop.TabIndex = 6;
             this.metroButtonPWMStop.Text = "Stop";
             this.metroToolTip.SetToolTip(this.metroButtonPWMStop, "Stop PWM");
@@ -785,10 +757,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonADCRead
             // 
             this.metroButtonADCRead.Highlight = true;
-            this.metroButtonADCRead.Location = new System.Drawing.Point(386, 345);
-            this.metroButtonADCRead.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonADCRead.Location = new System.Drawing.Point(290, 276);
             this.metroButtonADCRead.Name = "metroButtonADCRead";
-            this.metroButtonADCRead.Size = new System.Drawing.Size(125, 58);
+            this.metroButtonADCRead.Size = new System.Drawing.Size(94, 46);
             this.metroButtonADCRead.TabIndex = 6;
             this.metroButtonADCRead.Text = "Read";
             this.metroToolTip.SetToolTip(this.metroButtonADCRead, "Read ADC Vaule");
@@ -798,10 +769,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonUartSend
             // 
             this.metroButtonUartSend.Highlight = true;
-            this.metroButtonUartSend.Location = new System.Drawing.Point(514, 460);
-            this.metroButtonUartSend.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonUartSend.Location = new System.Drawing.Point(386, 368);
             this.metroButtonUartSend.Name = "metroButtonUartSend";
-            this.metroButtonUartSend.Size = new System.Drawing.Size(57, 79);
+            this.metroButtonUartSend.Size = new System.Drawing.Size(43, 63);
             this.metroButtonUartSend.TabIndex = 6;
             this.metroButtonUartSend.Text = "Send";
             this.metroToolTip.SetToolTip(this.metroButtonUartSend, "Send data via uart");
@@ -811,10 +781,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonSet
             // 
             this.metroButtonSet.Highlight = true;
-            this.metroButtonSet.Location = new System.Drawing.Point(441, 460);
-            this.metroButtonSet.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonSet.Location = new System.Drawing.Point(331, 368);
             this.metroButtonSet.Name = "metroButtonSet";
-            this.metroButtonSet.Size = new System.Drawing.Size(65, 33);
+            this.metroButtonSet.Size = new System.Drawing.Size(49, 26);
             this.metroButtonSet.TabIndex = 6;
             this.metroButtonSet.Text = "Set";
             this.metroToolTip.SetToolTip(this.metroButtonSet, "Setup uart");
@@ -824,10 +793,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonPWMStart
             // 
             this.metroButtonPWMStart.Highlight = true;
-            this.metroButtonPWMStart.Location = new System.Drawing.Point(143, 295);
-            this.metroButtonPWMStart.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonPWMStart.Location = new System.Drawing.Point(107, 236);
             this.metroButtonPWMStart.Name = "metroButtonPWMStart";
-            this.metroButtonPWMStart.Size = new System.Drawing.Size(77, 60);
+            this.metroButtonPWMStart.Size = new System.Drawing.Size(58, 48);
             this.metroButtonPWMStart.TabIndex = 6;
             this.metroButtonPWMStart.Text = "Start";
             this.metroToolTip.SetToolTip(this.metroButtonPWMStart, "Start PWM");
@@ -837,10 +805,9 @@ namespace MetroFramework.WiFiMCU
             // btnGPIORead
             // 
             this.btnGPIORead.Highlight = true;
-            this.btnGPIORead.Location = new System.Drawing.Point(136, 207);
-            this.btnGPIORead.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGPIORead.Location = new System.Drawing.Point(102, 166);
             this.btnGPIORead.Name = "btnGPIORead";
-            this.btnGPIORead.Size = new System.Drawing.Size(77, 42);
+            this.btnGPIORead.Size = new System.Drawing.Size(58, 34);
             this.btnGPIORead.TabIndex = 6;
             this.btnGPIORead.Text = "Read";
             this.metroToolTip.SetToolTip(this.btnGPIORead, "Read GPIP Vaule");
@@ -883,28 +850,26 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage3.HorizontalScrollbar = true;
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 11;
+            this.metroTabPage3.HorizontalScrollbarSize = 9;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 39);
-            this.metroTabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Padding = new System.Windows.Forms.Padding(33, 29, 33, 29);
-            this.metroTabPage3.Size = new System.Drawing.Size(648, 553);
+            this.metroTabPage3.Padding = new System.Windows.Forms.Padding(25, 23, 25, 23);
+            this.metroTabPage3.Size = new System.Drawing.Size(484, 434);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "   WiFi&&Net   ";
             this.metroTabPage3.VerticalScrollbar = true;
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 13;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             this.metroTabPage3.Visible = false;
             // 
             // checkBoxBindLoaclPort
             // 
             this.checkBoxBindLoaclPort.AutoSize = true;
             this.checkBoxBindLoaclPort.Enabled = false;
-            this.checkBoxBindLoaclPort.Location = new System.Drawing.Point(466, 222);
-            this.checkBoxBindLoaclPort.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxBindLoaclPort.Location = new System.Drawing.Point(350, 178);
             this.checkBoxBindLoaclPort.Name = "checkBoxBindLoaclPort";
-            this.checkBoxBindLoaclPort.Size = new System.Drawing.Size(118, 19);
+            this.checkBoxBindLoaclPort.Size = new System.Drawing.Size(112, 17);
             this.checkBoxBindLoaclPort.TabIndex = 25;
             this.checkBoxBindLoaclPort.Text = "Bind Local Port";
             this.metroToolTip.SetToolTip(this.checkBoxBindLoaclPort, "Bind local port for socket");
@@ -917,10 +882,9 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroToggleTransType.AutoSize = true;
             this.metroToggleTransType.DisplayStatus = false;
-            this.metroToggleTransType.Location = new System.Drawing.Point(291, 256);
-            this.metroToggleTransType.Margin = new System.Windows.Forms.Padding(4);
+            this.metroToggleTransType.Location = new System.Drawing.Point(218, 205);
             this.metroToggleTransType.Name = "metroToggleTransType";
-            this.metroToggleTransType.Size = new System.Drawing.Size(50, 19);
+            this.metroToggleTransType.Size = new System.Drawing.Size(50, 16);
             this.metroToggleTransType.TabIndex = 24;
             this.metroToggleTransType.Text = "Off";
             this.metroToolTip.SetToolTip(this.metroToggleTransType, "Select Transport Type TCP or UDP");
@@ -931,10 +895,9 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroToggleSocketType.AutoSize = true;
             this.metroToggleSocketType.DisplayStatus = false;
-            this.metroToggleSocketType.Location = new System.Drawing.Point(291, 222);
-            this.metroToggleSocketType.Margin = new System.Windows.Forms.Padding(4);
+            this.metroToggleSocketType.Location = new System.Drawing.Point(218, 178);
             this.metroToggleSocketType.Name = "metroToggleSocketType";
-            this.metroToggleSocketType.Size = new System.Drawing.Size(50, 19);
+            this.metroToggleSocketType.Size = new System.Drawing.Size(50, 16);
             this.metroToggleSocketType.TabIndex = 24;
             this.metroToggleSocketType.Text = "Off";
             this.metroToolTip.SetToolTip(this.metroToggleSocketType, "Select Socket Type Server or Client");
@@ -946,15 +909,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.textBoxSTAPSW.IconRight = true;
             this.textBoxSTAPSW.Lines = new string[0];
-            this.textBoxSTAPSW.Location = new System.Drawing.Point(380, 114);
-            this.textBoxSTAPSW.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSTAPSW.Location = new System.Drawing.Point(285, 91);
             this.textBoxSTAPSW.MaxLength = 32767;
             this.textBoxSTAPSW.Name = "textBoxSTAPSW";
             this.textBoxSTAPSW.PasswordChar = '\0';
             this.textBoxSTAPSW.PromptText = "Password for STA...";
             this.textBoxSTAPSW.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxSTAPSW.SelectedText = "";
-            this.textBoxSTAPSW.Size = new System.Drawing.Size(115, 38);
+            this.textBoxSTAPSW.Size = new System.Drawing.Size(86, 30);
             this.textBoxSTAPSW.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxSTAPSW, "Set Password for STATION Mode");
             this.textBoxSTAPSW.UseSelectable = true;
@@ -964,15 +926,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.textBoxAPPSW.IconRight = true;
             this.textBoxAPPSW.Lines = new string[0];
-            this.textBoxAPPSW.Location = new System.Drawing.Point(16, 114);
-            this.textBoxAPPSW.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAPPSW.Location = new System.Drawing.Point(12, 91);
             this.textBoxAPPSW.MaxLength = 32767;
             this.textBoxAPPSW.Name = "textBoxAPPSW";
             this.textBoxAPPSW.PasswordChar = '\0';
             this.textBoxAPPSW.PromptText = "Password for AP...";
             this.textBoxAPPSW.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxAPPSW.SelectedText = "";
-            this.textBoxAPPSW.Size = new System.Drawing.Size(149, 38);
+            this.textBoxAPPSW.Size = new System.Drawing.Size(112, 30);
             this.textBoxAPPSW.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxAPPSW, "Password for AP...");
             this.textBoxAPPSW.UseSelectable = true;
@@ -983,15 +944,14 @@ namespace MetroFramework.WiFiMCU
             this.textBoxBindLoadPort.Enabled = false;
             this.textBoxBindLoadPort.IconRight = true;
             this.textBoxBindLoadPort.Lines = new string[0];
-            this.textBoxBindLoadPort.Location = new System.Drawing.Point(466, 245);
-            this.textBoxBindLoadPort.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindLoadPort.Location = new System.Drawing.Point(350, 196);
             this.textBoxBindLoadPort.MaxLength = 32767;
             this.textBoxBindLoadPort.Name = "textBoxBindLoadPort";
             this.textBoxBindLoadPort.PasswordChar = '\0';
             this.textBoxBindLoadPort.PromptText = "Bind Port";
             this.textBoxBindLoadPort.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxBindLoadPort.SelectedText = "";
-            this.textBoxBindLoadPort.Size = new System.Drawing.Size(111, 38);
+            this.textBoxBindLoadPort.Size = new System.Drawing.Size(83, 30);
             this.textBoxBindLoadPort.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxBindLoadPort, "Bind Port");
             this.textBoxBindLoadPort.UseSelectable = true;
@@ -1002,15 +962,14 @@ namespace MetroFramework.WiFiMCU
             this.textBoxIP.Enabled = false;
             this.textBoxIP.IconRight = true;
             this.textBoxIP.Lines = new string[0];
-            this.textBoxIP.Location = new System.Drawing.Point(19, 291);
-            this.textBoxIP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIP.Location = new System.Drawing.Point(14, 233);
             this.textBoxIP.MaxLength = 32767;
             this.textBoxIP.Name = "textBoxIP";
             this.textBoxIP.PasswordChar = '\0';
             this.textBoxIP.PromptText = "Remote IP/Domain";
             this.textBoxIP.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxIP.SelectedText = "";
-            this.textBoxIP.Size = new System.Drawing.Size(353, 38);
+            this.textBoxIP.Size = new System.Drawing.Size(265, 30);
             this.textBoxIP.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxIP, "Remote IP/Domain");
             this.textBoxIP.UseSelectable = true;
@@ -1020,15 +979,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.labelPort.IconRight = true;
             this.labelPort.Lines = new string[0];
-            this.labelPort.Location = new System.Drawing.Point(380, 291);
-            this.labelPort.Margin = new System.Windows.Forms.Padding(4);
+            this.labelPort.Location = new System.Drawing.Point(285, 233);
             this.labelPort.MaxLength = 32767;
             this.labelPort.Name = "labelPort";
             this.labelPort.PasswordChar = '\0';
             this.labelPort.PromptText = "Local Port";
             this.labelPort.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.labelPort.SelectedText = "";
-            this.labelPort.Size = new System.Drawing.Size(130, 38);
+            this.labelPort.Size = new System.Drawing.Size(98, 30);
             this.labelPort.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.labelPort, "Local Port or Remote Port");
             this.labelPort.UseSelectable = true;
@@ -1038,15 +996,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.textBoxSendData.IconRight = true;
             this.textBoxSendData.Lines = new string[0];
-            this.textBoxSendData.Location = new System.Drawing.Point(19, 347);
-            this.textBoxSendData.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSendData.Location = new System.Drawing.Point(14, 278);
             this.textBoxSendData.MaxLength = 32767;
             this.textBoxSendData.Name = "textBoxSendData";
             this.textBoxSendData.PasswordChar = '\0';
             this.textBoxSendData.PromptText = "Send Data...";
             this.textBoxSendData.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxSendData.SelectedText = "";
-            this.textBoxSendData.Size = new System.Drawing.Size(491, 38);
+            this.textBoxSendData.Size = new System.Drawing.Size(368, 30);
             this.textBoxSendData.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxSendData, "Send Data...");
             this.textBoxSendData.UseSelectable = true;
@@ -1056,15 +1013,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.textBoxSTASSID.IconRight = true;
             this.textBoxSTASSID.Lines = new string[0];
-            this.textBoxSTASSID.Location = new System.Drawing.Point(380, 68);
-            this.textBoxSTASSID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSTASSID.Location = new System.Drawing.Point(285, 54);
             this.textBoxSTASSID.MaxLength = 32767;
             this.textBoxSTASSID.Name = "textBoxSTASSID";
             this.textBoxSTASSID.PasswordChar = '\0';
             this.textBoxSTASSID.PromptText = "SSID for STA...";
             this.textBoxSTASSID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxSTASSID.SelectedText = "";
-            this.textBoxSTASSID.Size = new System.Drawing.Size(115, 38);
+            this.textBoxSTASSID.Size = new System.Drawing.Size(86, 30);
             this.textBoxSTASSID.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxSTASSID, "Set SSID for STATION Mode");
             this.textBoxSTASSID.UseSelectable = true;
@@ -1074,15 +1030,14 @@ namespace MetroFramework.WiFiMCU
             // 
             this.textBoxAPSSID.IconRight = true;
             this.textBoxAPSSID.Lines = new string[0];
-            this.textBoxAPSSID.Location = new System.Drawing.Point(16, 68);
-            this.textBoxAPSSID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAPSSID.Location = new System.Drawing.Point(12, 54);
             this.textBoxAPSSID.MaxLength = 32767;
             this.textBoxAPSSID.Name = "textBoxAPSSID";
             this.textBoxAPSSID.PasswordChar = '\0';
             this.textBoxAPSSID.PromptText = "SSID for AP...";
             this.textBoxAPSSID.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textBoxAPSSID.SelectedText = "";
-            this.textBoxAPSSID.Size = new System.Drawing.Size(149, 38);
+            this.textBoxAPSSID.Size = new System.Drawing.Size(112, 30);
             this.textBoxAPSSID.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.textBoxAPSSID, "SSID for AP...");
             this.textBoxAPSSID.UseSelectable = true;
@@ -1091,10 +1046,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(390, 37);
-            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel4.Location = new System.Drawing.Point(292, 30);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(85, 20);
+            this.metroLabel4.Size = new System.Drawing.Size(78, 20);
             this.metroLabel4.TabIndex = 20;
             this.metroLabel4.Text = "STA mode";
             this.metroLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1103,10 +1058,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(19, 192);
-            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel6.Location = new System.Drawing.Point(14, 154);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(97, 20);
+            this.metroLabel6.Size = new System.Drawing.Size(90, 20);
             this.metroLabel6.TabIndex = 20;
             this.metroLabel6.Text = "Net Module";
             this.metroLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1115,10 +1070,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel13
             // 
             this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(66, 256);
-            this.metroLabel13.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel13.Location = new System.Drawing.Point(50, 205);
+            this.metroLabel13.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(124, 20);
+            this.metroLabel13.Size = new System.Drawing.Size(112, 20);
             this.metroLabel13.TabIndex = 20;
             this.metroLabel13.Text = "Transport Type:";
             this.metroLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1127,10 +1082,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(87, 222);
-            this.metroLabel7.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel7.Location = new System.Drawing.Point(65, 178);
+            this.metroLabel7.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(103, 20);
+            this.metroLabel7.Size = new System.Drawing.Size(93, 20);
             this.metroLabel7.TabIndex = 20;
             this.metroLabel7.Text = "Socket Type:";
             this.metroLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1139,10 +1094,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(364, 256);
-            this.metroLabel12.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel12.Location = new System.Drawing.Point(273, 205);
+            this.metroLabel12.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(40, 20);
+            this.metroLabel12.Size = new System.Drawing.Size(39, 20);
             this.metroLabel12.TabIndex = 20;
             this.metroLabel12.Text = "UDP";
             this.metroLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1151,10 +1106,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel11
             // 
             this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(229, 255);
-            this.metroLabel11.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel11.Location = new System.Drawing.Point(172, 204);
+            this.metroLabel11.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(37, 20);
+            this.metroLabel11.Size = new System.Drawing.Size(35, 20);
             this.metroLabel11.TabIndex = 20;
             this.metroLabel11.Text = "TCP";
             this.metroLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1163,10 +1118,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel10
             // 
             this.metroLabel10.AutoSize = true;
-            this.metroLabel10.Location = new System.Drawing.Point(364, 222);
-            this.metroLabel10.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel10.Location = new System.Drawing.Point(273, 178);
+            this.metroLabel10.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(51, 20);
+            this.metroLabel10.Size = new System.Drawing.Size(48, 20);
             this.metroLabel10.TabIndex = 20;
             this.metroLabel10.Text = "Client";
             this.metroLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1175,10 +1130,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(210, 221);
-            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel5.Location = new System.Drawing.Point(158, 177);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(56, 20);
+            this.metroLabel5.Size = new System.Drawing.Size(50, 20);
             this.metroLabel5.TabIndex = 20;
             this.metroLabel5.Text = "Server";
             this.metroLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1187,10 +1142,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(16, 37);
-            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel3.Location = new System.Drawing.Point(12, 30);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(76, 20);
+            this.metroLabel3.Size = new System.Drawing.Size(71, 20);
             this.metroLabel3.TabIndex = 20;
             this.metroLabel3.Text = "AP mode";
             this.metroLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1199,10 +1154,10 @@ namespace MetroFramework.WiFiMCU
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(16, 6);
-            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel2.Location = new System.Drawing.Point(12, 5);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(101, 20);
+            this.metroLabel2.Size = new System.Drawing.Size(95, 20);
             this.metroLabel2.TabIndex = 20;
             this.metroLabel2.Text = "WiFi Module";
             this.metroLabel2.UseStyleColors = true;
@@ -1210,10 +1165,9 @@ namespace MetroFramework.WiFiMCU
             // btnStartSTA
             // 
             this.btnStartSTA.Highlight = true;
-            this.btnStartSTA.Location = new System.Drawing.Point(503, 68);
-            this.btnStartSTA.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStartSTA.Location = new System.Drawing.Point(377, 54);
             this.btnStartSTA.Name = "btnStartSTA";
-            this.btnStartSTA.Size = new System.Drawing.Size(59, 38);
+            this.btnStartSTA.Size = new System.Drawing.Size(44, 30);
             this.btnStartSTA.TabIndex = 21;
             this.btnStartSTA.Text = "Start";
             this.metroToolTip.SetToolTip(this.btnStartSTA, "Connect to remote AP");
@@ -1223,10 +1177,9 @@ namespace MetroFramework.WiFiMCU
             // btnStopSTA
             // 
             this.btnStopSTA.Highlight = true;
-            this.btnStopSTA.Location = new System.Drawing.Point(503, 114);
-            this.btnStopSTA.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStopSTA.Location = new System.Drawing.Point(377, 91);
             this.btnStopSTA.Name = "btnStopSTA";
-            this.btnStopSTA.Size = new System.Drawing.Size(59, 38);
+            this.btnStopSTA.Size = new System.Drawing.Size(44, 30);
             this.btnStopSTA.TabIndex = 21;
             this.btnStopSTA.Text = "Stop";
             this.metroToolTip.SetToolTip(this.btnStopSTA, "Disconnect  from remote AP");
@@ -1236,10 +1189,9 @@ namespace MetroFramework.WiFiMCU
             // btnStopAP
             // 
             this.btnStopAP.Highlight = true;
-            this.btnStopAP.Location = new System.Drawing.Point(173, 114);
-            this.btnStopAP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStopAP.Location = new System.Drawing.Point(130, 91);
             this.btnStopAP.Name = "btnStopAP";
-            this.btnStopAP.Size = new System.Drawing.Size(59, 38);
+            this.btnStopAP.Size = new System.Drawing.Size(44, 30);
             this.btnStopAP.TabIndex = 21;
             this.btnStopAP.Text = "Stop";
             this.metroToolTip.SetToolTip(this.btnStopAP, "Stop Soft AP");
@@ -1249,10 +1201,9 @@ namespace MetroFramework.WiFiMCU
             // btnSendData
             // 
             this.btnSendData.Highlight = true;
-            this.btnSendData.Location = new System.Drawing.Point(518, 342);
-            this.btnSendData.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSendData.Location = new System.Drawing.Point(388, 274);
             this.btnSendData.Name = "btnSendData";
-            this.btnSendData.Size = new System.Drawing.Size(111, 43);
+            this.btnSendData.Size = new System.Drawing.Size(83, 34);
             this.btnSendData.TabIndex = 21;
             this.btnSendData.Text = "Send";
             this.metroToolTip.SetToolTip(this.btnSendData, "Send Data");
@@ -1262,10 +1213,9 @@ namespace MetroFramework.WiFiMCU
             // btnNetSet
             // 
             this.btnNetSet.Highlight = true;
-            this.btnNetSet.Location = new System.Drawing.Point(518, 291);
-            this.btnNetSet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNetSet.Location = new System.Drawing.Point(388, 233);
             this.btnNetSet.Name = "btnNetSet";
-            this.btnNetSet.Size = new System.Drawing.Size(111, 43);
+            this.btnNetSet.Size = new System.Drawing.Size(83, 34);
             this.btnNetSet.TabIndex = 21;
             this.btnNetSet.Text = "Set";
             this.metroToolTip.SetToolTip(this.btnNetSet, "Set Net Mode");
@@ -1275,10 +1225,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonScan
             // 
             this.metroButtonScan.Highlight = true;
-            this.metroButtonScan.Location = new System.Drawing.Point(314, 68);
-            this.metroButtonScan.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonScan.Location = new System.Drawing.Point(236, 54);
             this.metroButtonScan.Name = "metroButtonScan";
-            this.metroButtonScan.Size = new System.Drawing.Size(59, 84);
+            this.metroButtonScan.Size = new System.Drawing.Size(44, 67);
             this.metroButtonScan.TabIndex = 21;
             this.metroButtonScan.Text = "Scan";
             this.metroToolTip.SetToolTip(this.metroButtonScan, "Scan AP signals");
@@ -1288,10 +1237,9 @@ namespace MetroFramework.WiFiMCU
             // btnGetAPIP
             // 
             this.btnGetAPIP.Highlight = true;
-            this.btnGetAPIP.Location = new System.Drawing.Point(239, 68);
-            this.btnGetAPIP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGetAPIP.Location = new System.Drawing.Point(179, 54);
             this.btnGetAPIP.Name = "btnGetAPIP";
-            this.btnGetAPIP.Size = new System.Drawing.Size(59, 84);
+            this.btnGetAPIP.Size = new System.Drawing.Size(44, 67);
             this.btnGetAPIP.TabIndex = 21;
             this.btnGetAPIP.Text = "AP IP";
             this.metroToolTip.SetToolTip(this.btnGetAPIP, "Get AP IP address");
@@ -1301,10 +1249,9 @@ namespace MetroFramework.WiFiMCU
             // btnGetSTALink
             // 
             this.btnGetSTALink.Highlight = true;
-            this.btnGetSTALink.Location = new System.Drawing.Point(570, 114);
-            this.btnGetSTALink.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGetSTALink.Location = new System.Drawing.Point(428, 91);
             this.btnGetSTALink.Name = "btnGetSTALink";
-            this.btnGetSTALink.Size = new System.Drawing.Size(59, 38);
+            this.btnGetSTALink.Size = new System.Drawing.Size(44, 30);
             this.btnGetSTALink.TabIndex = 21;
             this.btnGetSTALink.Text = "Link";
             this.metroToolTip.SetToolTip(this.btnGetSTALink, "Get STA link status");
@@ -1314,10 +1261,9 @@ namespace MetroFramework.WiFiMCU
             // btnGetSTAIP
             // 
             this.btnGetSTAIP.Highlight = true;
-            this.btnGetSTAIP.Location = new System.Drawing.Point(570, 68);
-            this.btnGetSTAIP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGetSTAIP.Location = new System.Drawing.Point(428, 54);
             this.btnGetSTAIP.Name = "btnGetSTAIP";
-            this.btnGetSTAIP.Size = new System.Drawing.Size(59, 38);
+            this.btnGetSTAIP.Size = new System.Drawing.Size(44, 30);
             this.btnGetSTAIP.TabIndex = 21;
             this.btnGetSTAIP.Text = "STA IP";
             this.metroToolTip.SetToolTip(this.btnGetSTAIP, "Get STA IP status");
@@ -1327,10 +1273,9 @@ namespace MetroFramework.WiFiMCU
             // btnStartAP
             // 
             this.btnStartAP.Highlight = true;
-            this.btnStartAP.Location = new System.Drawing.Point(173, 67);
-            this.btnStartAP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStartAP.Location = new System.Drawing.Point(130, 54);
             this.btnStartAP.Name = "btnStartAP";
-            this.btnStartAP.Size = new System.Drawing.Size(59, 38);
+            this.btnStartAP.Size = new System.Drawing.Size(44, 30);
             this.btnStartAP.TabIndex = 21;
             this.btnStartAP.Text = "Start";
             this.metroToolTip.SetToolTip(this.btnStartAP, "Start Soft AP");
@@ -1349,26 +1294,24 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage4.Controls.Add(this.metroTileFormat);
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 11;
+            this.metroTabPage4.HorizontalScrollbarSize = 9;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 39);
-            this.metroTabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Padding = new System.Windows.Forms.Padding(33, 29, 33, 29);
-            this.metroTabPage4.Size = new System.Drawing.Size(648, 553);
+            this.metroTabPage4.Padding = new System.Windows.Forms.Padding(25, 23, 25, 23);
+            this.metroTabPage4.Size = new System.Drawing.Size(484, 434);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "   File System   ";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 13;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
             this.metroTabPage4.Visible = false;
             // 
             // metroButtonFileState
             // 
             this.metroButtonFileState.Highlight = true;
-            this.metroButtonFileState.Location = new System.Drawing.Point(531, 286);
-            this.metroButtonFileState.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonFileState.Location = new System.Drawing.Point(398, 229);
             this.metroButtonFileState.Name = "metroButtonFileState";
-            this.metroButtonFileState.Size = new System.Drawing.Size(103, 63);
+            this.metroButtonFileState.Size = new System.Drawing.Size(77, 50);
             this.metroButtonFileState.TabIndex = 23;
             this.metroButtonFileState.Text = "File State";
             this.metroButtonFileState.UseSelectable = true;
@@ -1377,10 +1320,9 @@ namespace MetroFramework.WiFiMCU
             // metroButton42
             // 
             this.metroButton42.Highlight = true;
-            this.metroButton42.Location = new System.Drawing.Point(531, 193);
-            this.metroButton42.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButton42.Location = new System.Drawing.Point(398, 154);
             this.metroButton42.Name = "metroButton42";
-            this.metroButton42.Size = new System.Drawing.Size(103, 63);
+            this.metroButton42.Size = new System.Drawing.Size(77, 50);
             this.metroButton42.TabIndex = 23;
             this.metroButton42.Text = "File Info";
             this.metroButton42.UseSelectable = true;
@@ -1389,10 +1331,9 @@ namespace MetroFramework.WiFiMCU
             // btnFilelist
             // 
             this.btnFilelist.Highlight = true;
-            this.btnFilelist.Location = new System.Drawing.Point(531, 103);
-            this.btnFilelist.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFilelist.Location = new System.Drawing.Point(398, 82);
             this.btnFilelist.Name = "btnFilelist";
-            this.btnFilelist.Size = new System.Drawing.Size(103, 63);
+            this.btnFilelist.Size = new System.Drawing.Size(77, 50);
             this.btnFilelist.TabIndex = 23;
             this.btnFilelist.Text = "File List";
             this.btnFilelist.UseSelectable = true;
@@ -1401,10 +1342,9 @@ namespace MetroFramework.WiFiMCU
             // btnFileUpload
             // 
             this.btnFileUpload.Highlight = true;
-            this.btnFileUpload.Location = new System.Drawing.Point(531, 17);
-            this.btnFileUpload.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFileUpload.Location = new System.Drawing.Point(398, 14);
             this.btnFileUpload.Name = "btnFileUpload";
-            this.btnFileUpload.Size = new System.Drawing.Size(103, 63);
+            this.btnFileUpload.Size = new System.Drawing.Size(77, 50);
             this.btnFileUpload.TabIndex = 23;
             this.btnFileUpload.Text = "Upload";
             this.btnFileUpload.UseSelectable = true;
@@ -1424,10 +1364,11 @@ namespace MetroFramework.WiFiMCU
             this.listView1.FullRowSelect = true;
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 17);
+            this.listView1.Location = new System.Drawing.Point(2, 14);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(521, 531);
+            this.listView1.Size = new System.Drawing.Size(391, 425);
             this.listView1.TabIndex = 22;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -1460,52 +1401,52 @@ namespace MetroFramework.WiFiMCU
             this.toolStripSeparator1,
             this.Delete});
             this.metroContextMenu2.Name = "metroContextMenu1";
-            this.metroContextMenu2.Size = new System.Drawing.Size(153, 154);
+            this.metroContextMenu2.Size = new System.Drawing.Size(136, 142);
             // 
             // Run
             // 
             this.Run.Name = "Run";
-            this.Run.Size = new System.Drawing.Size(152, 24);
+            this.Run.Size = new System.Drawing.Size(135, 22);
             this.Run.Text = "Run";
             this.Run.Click += new System.EventHandler(this.Run_Click);
             // 
             // View
             // 
             this.View.Name = "View";
-            this.View.Size = new System.Drawing.Size(152, 24);
+            this.View.Size = new System.Drawing.Size(135, 22);
             this.View.Text = "View";
             this.View.Click += new System.EventHandler(this.View_Click);
             // 
             // Compile
             // 
             this.Compile.Name = "Compile";
-            this.Compile.Size = new System.Drawing.Size(152, 24);
+            this.Compile.Size = new System.Drawing.Size(135, 22);
             this.Compile.Text = "Compile";
             this.Compile.Click += new System.EventHandler(this.Compile_Click);
             // 
             // Rename
             // 
             this.Rename.Name = "Rename";
-            this.Rename.Size = new System.Drawing.Size(152, 24);
+            this.Rename.Size = new System.Drawing.Size(135, 22);
             this.Rename.Text = "Rename";
             this.Rename.Click += new System.EventHandler(this.Rename_Click);
             // 
             // Download
             // 
             this.Download.Name = "Download";
-            this.Download.Size = new System.Drawing.Size(152, 24);
+            this.Download.Size = new System.Drawing.Size(135, 22);
             this.Download.Text = "Download";
             this.Download.Click += new System.EventHandler(this.Download_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
             // 
             // Delete
             // 
             this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(152, 24);
+            this.Delete.Size = new System.Drawing.Size(135, 22);
             this.Delete.Text = "Delete";
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
@@ -1513,10 +1454,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroLabelUploadProgress.AutoSize = true;
             this.metroLabelUploadProgress.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabelUploadProgress.Location = new System.Drawing.Point(564, 493);
-            this.metroLabelUploadProgress.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabelUploadProgress.Location = new System.Drawing.Point(423, 394);
+            this.metroLabelUploadProgress.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabelUploadProgress.Name = "metroLabelUploadProgress";
-            this.metroLabelUploadProgress.Size = new System.Drawing.Size(45, 19);
+            this.metroLabelUploadProgress.Size = new System.Drawing.Size(40, 17);
             this.metroLabelUploadProgress.TabIndex = 21;
             this.metroLabelUploadProgress.Text = "100%";
             this.metroLabelUploadProgress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1524,11 +1465,10 @@ namespace MetroFramework.WiFiMCU
             // 
             // metroProgressSpinner
             // 
-            this.metroProgressSpinner.Location = new System.Drawing.Point(543, 461);
-            this.metroProgressSpinner.Margin = new System.Windows.Forms.Padding(4);
+            this.metroProgressSpinner.Location = new System.Drawing.Point(407, 369);
             this.metroProgressSpinner.Maximum = 100;
             this.metroProgressSpinner.Name = "metroProgressSpinner";
-            this.metroProgressSpinner.Size = new System.Drawing.Size(90, 83);
+            this.metroProgressSpinner.Size = new System.Drawing.Size(68, 66);
             this.metroProgressSpinner.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroProgressSpinner.TabIndex = 14;
             this.metroProgressSpinner.UseSelectable = true;
@@ -1537,10 +1477,9 @@ namespace MetroFramework.WiFiMCU
             // metroTileFormat
             // 
             this.metroTileFormat.ActiveControl = null;
-            this.metroTileFormat.Location = new System.Drawing.Point(531, 378);
-            this.metroTileFormat.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileFormat.Location = new System.Drawing.Point(398, 302);
             this.metroTileFormat.Name = "metroTileFormat";
-            this.metroTileFormat.Size = new System.Drawing.Size(103, 63);
+            this.metroTileFormat.Size = new System.Drawing.Size(77, 50);
             this.metroTileFormat.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroTileFormat.TabIndex = 2;
             this.metroTileFormat.Text = "Format";
@@ -1561,26 +1500,25 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage2.Controls.Add(this.metroLabel15);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 11;
+            this.metroTabPage2.HorizontalScrollbarSize = 9;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 39);
-            this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Padding = new System.Windows.Forms.Padding(33, 29, 33, 29);
-            this.metroTabPage2.Size = new System.Drawing.Size(648, 553);
+            this.metroTabPage2.Padding = new System.Windows.Forms.Padding(25, 23, 25, 23);
+            this.metroTabPage2.Size = new System.Drawing.Size(484, 434);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "   Firmware   ";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 13;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
             this.metroTabPage2.Visible = false;
             // 
             // metroLabelUploadProgress2
             // 
             this.metroLabelUploadProgress2.AutoSize = true;
-            this.metroLabelUploadProgress2.Location = new System.Drawing.Point(255, 392);
-            this.metroLabelUploadProgress2.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabelUploadProgress2.Location = new System.Drawing.Point(191, 314);
+            this.metroLabelUploadProgress2.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabelUploadProgress2.Name = "metroLabelUploadProgress2";
-            this.metroLabelUploadProgress2.Size = new System.Drawing.Size(49, 20);
+            this.metroLabelUploadProgress2.Size = new System.Drawing.Size(45, 20);
             this.metroLabelUploadProgress2.TabIndex = 28;
             this.metroLabelUploadProgress2.Text = "100%";
             this.metroLabelUploadProgress2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1588,11 +1526,10 @@ namespace MetroFramework.WiFiMCU
             // 
             // metroProgressSpinner2
             // 
-            this.metroProgressSpinner2.Location = new System.Drawing.Point(187, 302);
-            this.metroProgressSpinner2.Margin = new System.Windows.Forms.Padding(4);
+            this.metroProgressSpinner2.Location = new System.Drawing.Point(140, 242);
             this.metroProgressSpinner2.Maximum = 100;
             this.metroProgressSpinner2.Name = "metroProgressSpinner2";
-            this.metroProgressSpinner2.Size = new System.Drawing.Size(223, 200);
+            this.metroProgressSpinner2.Size = new System.Drawing.Size(167, 160);
             this.metroProgressSpinner2.Spinning = false;
             this.metroProgressSpinner2.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroProgressSpinner2.TabIndex = 27;
@@ -1605,10 +1542,9 @@ namespace MetroFramework.WiFiMCU
             this.metroCheckBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.metroCheckBox3.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroCheckBox3.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.metroCheckBox3.Location = new System.Drawing.Point(372, 246);
-            this.metroCheckBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.metroCheckBox3.Location = new System.Drawing.Point(279, 197);
             this.metroCheckBox3.Name = "metroCheckBox3";
-            this.metroCheckBox3.Size = new System.Drawing.Size(142, 26);
+            this.metroCheckBox3.Size = new System.Drawing.Size(134, 25);
             this.metroCheckBox3.TabIndex = 26;
             this.metroCheckBox3.Text = "Wlan Driver";
             this.metroCheckBox3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1622,10 +1558,9 @@ namespace MetroFramework.WiFiMCU
             this.metroCheckBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.metroCheckBox2.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroCheckBox2.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.metroCheckBox2.Location = new System.Drawing.Point(372, 211);
-            this.metroCheckBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.metroCheckBox2.Location = new System.Drawing.Point(279, 169);
             this.metroCheckBox2.Name = "metroCheckBox2";
-            this.metroCheckBox2.Size = new System.Drawing.Size(134, 26);
+            this.metroCheckBox2.Size = new System.Drawing.Size(128, 25);
             this.metroCheckBox2.TabIndex = 26;
             this.metroCheckBox2.Text = "Bootloader";
             this.metroCheckBox2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1641,10 +1576,9 @@ namespace MetroFramework.WiFiMCU
             this.metroCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.metroCheckBox1.FontSize = MetroFramework.MetroCheckBoxSize.Tall;
             this.metroCheckBox1.FontWeight = MetroFramework.MetroCheckBoxWeight.Bold;
-            this.metroCheckBox1.Location = new System.Drawing.Point(372, 177);
-            this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroCheckBox1.Location = new System.Drawing.Point(279, 142);
             this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(118, 26);
+            this.metroCheckBox1.Size = new System.Drawing.Size(112, 25);
             this.metroCheckBox1.TabIndex = 26;
             this.metroCheckBox1.Text = "Firmware";
             this.metroCheckBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1655,10 +1589,9 @@ namespace MetroFramework.WiFiMCU
             // btnSendFW
             // 
             this.btnSendFW.Highlight = true;
-            this.btnSendFW.Location = new System.Drawing.Point(198, 177);
-            this.btnSendFW.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSendFW.Location = new System.Drawing.Point(148, 142);
             this.btnSendFW.Name = "btnSendFW";
-            this.btnSendFW.Size = new System.Drawing.Size(157, 95);
+            this.btnSendFW.Size = new System.Drawing.Size(118, 76);
             this.btnSendFW.TabIndex = 24;
             this.btnSendFW.Text = "Update";
             this.metroToolTip.SetToolTip(this.btnSendFW, "Choose an option to update");
@@ -1669,10 +1602,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroLabel16.AutoSize = true;
             this.metroLabel16.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel16.Location = new System.Drawing.Point(56, 93);
-            this.metroLabel16.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel16.Location = new System.Drawing.Point(42, 74);
+            this.metroLabel16.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel16.Name = "metroLabel16";
-            this.metroLabel16.Size = new System.Drawing.Size(407, 19);
+            this.metroLabel16.Size = new System.Drawing.Size(385, 17);
             this.metroLabel16.TabIndex = 5;
             this.metroLabel16.Text = "Upload a wrong firmware file may cause the MCU fail to startup!";
             this.metroLabel16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1683,10 +1616,10 @@ namespace MetroFramework.WiFiMCU
             this.metroLabel15.AutoSize = true;
             this.metroLabel15.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(225, 33);
-            this.metroLabel15.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel15.Location = new System.Drawing.Point(169, 26);
+            this.metroLabel15.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel15.Name = "metroLabel15";
-            this.metroLabel15.Size = new System.Drawing.Size(162, 26);
+            this.metroLabel15.Size = new System.Drawing.Size(149, 25);
             this.metroLabel15.TabIndex = 5;
             this.metroLabel15.Text = "Be very careful!";
             this.metroLabel15.UseStyleColors = true;
@@ -1697,16 +1630,15 @@ namespace MetroFramework.WiFiMCU
             this.metroTabPage6.Controls.Add(this.metroLabel14);
             this.metroTabPage6.HorizontalScrollbarBarColor = true;
             this.metroTabPage6.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage6.HorizontalScrollbarSize = 11;
+            this.metroTabPage6.HorizontalScrollbarSize = 9;
             this.metroTabPage6.Location = new System.Drawing.Point(4, 39);
-            this.metroTabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage6.Name = "metroTabPage6";
-            this.metroTabPage6.Size = new System.Drawing.Size(648, 553);
+            this.metroTabPage6.Size = new System.Drawing.Size(484, 434);
             this.metroTabPage6.TabIndex = 5;
             this.metroTabPage6.Text = "   Manuals   ";
             this.metroTabPage6.VerticalScrollbarBarColor = true;
             this.metroTabPage6.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage6.VerticalScrollbarSize = 13;
+            this.metroTabPage6.VerticalScrollbarSize = 10;
             this.metroTabPage6.Visible = false;
             // 
             // metroTextBoxInfo
@@ -1714,15 +1646,14 @@ namespace MetroFramework.WiFiMCU
             this.metroTextBoxInfo.BackColor = System.Drawing.Color.YellowGreen;
             this.metroTextBoxInfo.IconRight = true;
             this.metroTextBoxInfo.Lines = new string[0];
-            this.metroTextBoxInfo.Location = new System.Drawing.Point(25, 97);
-            this.metroTextBoxInfo.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxInfo.Location = new System.Drawing.Point(19, 78);
             this.metroTextBoxInfo.MaxLength = 32767;
             this.metroTextBoxInfo.Multiline = true;
             this.metroTextBoxInfo.Name = "metroTextBoxInfo";
             this.metroTextBoxInfo.PasswordChar = '\0';
             this.metroTextBoxInfo.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxInfo.SelectedText = "";
-            this.metroTextBoxInfo.Size = new System.Drawing.Size(587, 321);
+            this.metroTextBoxInfo.Size = new System.Drawing.Size(440, 257);
             this.metroTextBoxInfo.TabIndex = 20;
             this.metroToolTip.SetToolTip(this.metroTextBoxInfo, "Set timer period");
             this.metroTextBoxInfo.UseSelectable = true;
@@ -1732,10 +1663,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroLabel14.AutoSize = true;
             this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel14.Location = new System.Drawing.Point(103, 53);
-            this.metroLabel14.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel14.Location = new System.Drawing.Point(77, 42);
+            this.metroLabel14.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(355, 19);
+            this.metroLabel14.Size = new System.Drawing.Size(336, 17);
             this.metroLabel14.TabIndex = 12;
             this.metroLabel14.Text = "WiFiMCU is an open source project based on EMW3165";
             this.metroLabel14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1759,11 +1690,10 @@ namespace MetroFramework.WiFiMCU
             this.comboBoxSerialBaudrate.Items.AddRange(new object[] {
             "115200",
             "9600"});
-            this.comboBoxSerialBaudrate.Location = new System.Drawing.Point(85, 145);
-            this.comboBoxSerialBaudrate.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSerialBaudrate.Location = new System.Drawing.Point(64, 116);
             this.comboBoxSerialBaudrate.Name = "comboBoxSerialBaudrate";
             this.comboBoxSerialBaudrate.PromptText = "Baudrate";
-            this.comboBoxSerialBaudrate.Size = new System.Drawing.Size(101, 30);
+            this.comboBoxSerialBaudrate.Size = new System.Drawing.Size(77, 30);
             this.comboBoxSerialBaudrate.Style = MetroFramework.MetroColorStyle.Lime;
             this.comboBoxSerialBaudrate.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.comboBoxSerialBaudrate, "Baud Rate");
@@ -1773,11 +1703,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.comboBoxSerialPort.FormattingEnabled = true;
             this.comboBoxSerialPort.ItemHeight = 24;
-            this.comboBoxSerialPort.Location = new System.Drawing.Point(85, 98);
-            this.comboBoxSerialPort.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSerialPort.Location = new System.Drawing.Point(64, 78);
             this.comboBoxSerialPort.Name = "comboBoxSerialPort";
             this.comboBoxSerialPort.PromptText = "COM";
-            this.comboBoxSerialPort.Size = new System.Drawing.Size(101, 30);
+            this.comboBoxSerialPort.Size = new System.Drawing.Size(77, 30);
             this.comboBoxSerialPort.Style = MetroFramework.MetroColorStyle.Green;
             this.comboBoxSerialPort.TabIndex = 18;
             this.metroToolTip.SetToolTip(this.comboBoxSerialPort, "Serial Port");
@@ -1787,10 +1716,9 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTileOpenPort.ActiveControl = null;
             this.metroTileOpenPort.BackColor = System.Drawing.SystemColors.Control;
-            this.metroTileOpenPort.Location = new System.Drawing.Point(193, 98);
-            this.metroTileOpenPort.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileOpenPort.Location = new System.Drawing.Point(145, 78);
             this.metroTileOpenPort.Name = "metroTileOpenPort";
-            this.metroTileOpenPort.Size = new System.Drawing.Size(107, 85);
+            this.metroTileOpenPort.Size = new System.Drawing.Size(80, 68);
             this.metroTileOpenPort.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroTileOpenPort.TabIndex = 2;
             this.metroTileOpenPort.Text = "Open";
@@ -1802,10 +1730,9 @@ namespace MetroFramework.WiFiMCU
             // metroTileRestart
             // 
             this.metroTileRestart.ActiveControl = null;
-            this.metroTileRestart.Location = new System.Drawing.Point(543, 97);
-            this.metroTileRestart.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileRestart.Location = new System.Drawing.Point(407, 78);
             this.metroTileRestart.Name = "metroTileRestart";
-            this.metroTileRestart.Size = new System.Drawing.Size(107, 85);
+            this.metroTileRestart.Size = new System.Drawing.Size(80, 68);
             this.metroTileRestart.Style = MetroFramework.MetroColorStyle.Brown;
             this.metroTileRestart.TabIndex = 2;
             this.metroTileRestart.Text = "Restart";
@@ -1818,10 +1745,9 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTileSwitch.ActiveControl = null;
             this.metroTileSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTileSwitch.Location = new System.Drawing.Point(1339, 22);
-            this.metroTileSwitch.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileSwitch.Location = new System.Drawing.Point(1004, 18);
             this.metroTileSwitch.Name = "metroTileSwitch";
-            this.metroTileSwitch.Size = new System.Drawing.Size(35, 35);
+            this.metroTileSwitch.Size = new System.Drawing.Size(26, 28);
             this.metroTileSwitch.TabIndex = 4;
             this.metroTileSwitch.Text = "S";
             this.metroTileSwitch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1833,10 +1759,9 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroTileSWitchTheme.ActiveControl = null;
             this.metroTileSWitchTheme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTileSWitchTheme.Location = new System.Drawing.Point(1299, 22);
-            this.metroTileSWitchTheme.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileSWitchTheme.Location = new System.Drawing.Point(974, 18);
             this.metroTileSWitchTheme.Name = "metroTileSWitchTheme";
-            this.metroTileSWitchTheme.Size = new System.Drawing.Size(32, 35);
+            this.metroTileSWitchTheme.Size = new System.Drawing.Size(24, 28);
             this.metroTileSWitchTheme.TabIndex = 2;
             this.metroTileSWitchTheme.Text = "T";
             this.metroTileSWitchTheme.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1847,10 +1772,9 @@ namespace MetroFramework.WiFiMCU
             // metroTileScan
             // 
             this.metroTileScan.ActiveControl = null;
-            this.metroTileScan.Location = new System.Drawing.Point(11, 98);
-            this.metroTileScan.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTileScan.Location = new System.Drawing.Point(8, 78);
             this.metroTileScan.Name = "metroTileScan";
-            this.metroTileScan.Size = new System.Drawing.Size(64, 77);
+            this.metroTileScan.Size = new System.Drawing.Size(48, 62);
             this.metroTileScan.TabIndex = 2;
             this.metroTileScan.Text = "Scan";
             this.metroToolTip.SetToolTip(this.metroTileScan, "Scan available serial port");
@@ -1860,10 +1784,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonTick
             // 
             this.metroButtonTick.Highlight = true;
-            this.metroButtonTick.Location = new System.Drawing.Point(416, 97);
-            this.metroButtonTick.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonTick.Location = new System.Drawing.Point(312, 78);
             this.metroButtonTick.Name = "metroButtonTick";
-            this.metroButtonTick.Size = new System.Drawing.Size(54, 42);
+            this.metroButtonTick.Size = new System.Drawing.Size(40, 34);
             this.metroButtonTick.TabIndex = 6;
             this.metroButtonTick.Text = "Tick";
             this.metroButtonTick.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1874,10 +1797,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonCG
             // 
             this.metroButtonCG.Highlight = true;
-            this.metroButtonCG.Location = new System.Drawing.Point(478, 97);
-            this.metroButtonCG.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonCG.Location = new System.Drawing.Point(358, 78);
             this.metroButtonCG.Name = "metroButtonCG";
-            this.metroButtonCG.Size = new System.Drawing.Size(57, 42);
+            this.metroButtonCG.Size = new System.Drawing.Size(43, 34);
             this.metroButtonCG.TabIndex = 6;
             this.metroButtonCG.Text = "Garbage";
             this.metroButtonCG.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1888,10 +1810,9 @@ namespace MetroFramework.WiFiMCU
             // metroButtonMem
             // 
             this.metroButtonMem.Highlight = true;
-            this.metroButtonMem.Location = new System.Drawing.Point(416, 140);
-            this.metroButtonMem.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButtonMem.Location = new System.Drawing.Point(312, 112);
             this.metroButtonMem.Name = "metroButtonMem";
-            this.metroButtonMem.Size = new System.Drawing.Size(119, 42);
+            this.metroButtonMem.Size = new System.Drawing.Size(89, 34);
             this.metroButtonMem.TabIndex = 6;
             this.metroButtonMem.Text = "Mem";
             this.metroButtonMem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -1905,8 +1826,7 @@ namespace MetroFramework.WiFiMCU
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTextBoxSend.IconRight = true;
             this.metroTextBoxSend.Lines = new string[0];
-            this.metroTextBoxSend.Location = new System.Drawing.Point(673, 782);
-            this.metroTextBoxSend.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTextBoxSend.Location = new System.Drawing.Point(505, 626);
             this.metroTextBoxSend.MaxLength = 32767;
             this.metroTextBoxSend.Multiline = true;
             this.metroTextBoxSend.Name = "metroTextBoxSend";
@@ -1914,7 +1834,7 @@ namespace MetroFramework.WiFiMCU
             this.metroTextBoxSend.PromptText = "Type commands";
             this.metroTextBoxSend.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBoxSend.SelectedText = "";
-            this.metroTextBoxSend.Size = new System.Drawing.Size(849, 38);
+            this.metroTextBoxSend.Size = new System.Drawing.Size(637, 30);
             this.metroTextBoxSend.TabIndex = 22;
             this.metroToolTip.SetToolTip(this.metroTextBoxSend, "Press enter to send");
             this.metroTextBoxSend.UseSelectable = true;
@@ -1930,10 +1850,11 @@ namespace MetroFramework.WiFiMCU
             this.txtSP.ContextMenuStrip = this.metroContextMenu1;
             this.txtSP.Font = new System.Drawing.Font("仿宋", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSP.ForeColor = System.Drawing.Color.Yellow;
-            this.txtSP.Location = new System.Drawing.Point(680, 97);
+            this.txtSP.Location = new System.Drawing.Point(510, 78);
+            this.txtSP.Margin = new System.Windows.Forms.Padding(2);
             this.txtSP.Name = "txtSP";
             this.txtSP.ReadOnly = true;
-            this.txtSP.Size = new System.Drawing.Size(828, 677);
+            this.txtSP.Size = new System.Drawing.Size(621, 542);
             this.txtSP.TabIndex = 23;
             this.txtSP.Text = "";
             this.metroToolTip.SetToolTip(this.txtSP, "Right Click for more...");
@@ -1950,42 +1871,55 @@ namespace MetroFramework.WiFiMCU
             this.toolStripSeparator2,
             this.Restart});
             this.metroContextMenu1.Name = "metroContextMenu1";
-            this.metroContextMenu1.Size = new System.Drawing.Size(215, 82);
+            this.metroContextMenu1.Size = new System.Drawing.Size(186, 76);
             // 
             // ClearScreen
             // 
             this.ClearScreen.Name = "ClearScreen";
-            this.ClearScreen.Size = new System.Drawing.Size(214, 24);
+            this.ClearScreen.Size = new System.Drawing.Size(185, 22);
             this.ClearScreen.Text = "Clear Screen";
             this.ClearScreen.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // ClearHistory
             // 
             this.ClearHistory.Name = "ClearHistory";
-            this.ClearHistory.Size = new System.Drawing.Size(214, 24);
+            this.ClearHistory.Size = new System.Drawing.Size(185, 22);
             this.ClearHistory.Text = "Clear Input History";
             this.ClearHistory.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(211, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(182, 6);
             // 
             // Restart
             // 
             this.Restart.Name = "Restart";
-            this.Restart.Size = new System.Drawing.Size(214, 24);
+            this.Restart.Size = new System.Drawing.Size(185, 22);
             this.Restart.Text = "Restart";
             this.Restart.Click += new System.EventHandler(this.Restart_Click);
+            // 
+            // metroButtonSupport
+            // 
+            this.metroButtonSupport.Highlight = true;
+            this.metroButtonSupport.Location = new System.Drawing.Point(855, 18);
+            this.metroButtonSupport.Name = "metroButtonSupport";
+            this.metroButtonSupport.Size = new System.Drawing.Size(79, 28);
+            this.metroButtonSupport.TabIndex = 6;
+            this.metroButtonSupport.Text = "Support";
+            this.metroButtonSupport.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.metroToolTip.SetToolTip(this.metroButtonSupport, "Technical Support From Doit.am");
+            this.metroButtonSupport.UseSelectable = true;
+            this.metroButtonSupport.Click += new System.EventHandler(this.metroButtonSupport_Click);
             // 
             // metroLabelCom
             // 
             this.metroLabelCom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.metroLabelCom.AutoSize = true;
-            this.metroLabelCom.Location = new System.Drawing.Point(8, 800);
-            this.metroLabelCom.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabelCom.Location = new System.Drawing.Point(6, 640);
+            this.metroLabelCom.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabelCom.Name = "metroLabelCom";
-            this.metroLabelCom.Size = new System.Drawing.Size(142, 20);
+            this.metroLabelCom.Size = new System.Drawing.Size(130, 20);
             this.metroLabelCom.TabIndex = 5;
             this.metroLabelCom.Text = "Serial Port: Closed";
             this.metroLabelCom.UseStyleColors = true;
@@ -1994,10 +1928,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroLabel21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.metroLabel21.AutoSize = true;
-            this.metroLabel21.Location = new System.Drawing.Point(257, 800);
-            this.metroLabel21.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel21.Location = new System.Drawing.Point(193, 640);
+            this.metroLabel21.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel21.Name = "metroLabel21";
-            this.metroLabel21.Size = new System.Drawing.Size(79, 20);
+            this.metroLabel21.Size = new System.Drawing.Size(72, 20);
             this.metroLabel21.TabIndex = 5;
             this.metroLabel21.Text = "Tx(Bytes:)";
             this.metroLabel21.UseStyleColors = true;
@@ -2006,10 +1940,10 @@ namespace MetroFramework.WiFiMCU
             // 
             this.metroLabel22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.metroLabel22.AutoSize = true;
-            this.metroLabel22.Location = new System.Drawing.Point(443, 800);
-            this.metroLabel22.Margin = new System.Windows.Forms.Padding(4);
+            this.metroLabel22.Location = new System.Drawing.Point(332, 640);
+            this.metroLabel22.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel22.Name = "metroLabel22";
-            this.metroLabel22.Size = new System.Drawing.Size(80, 20);
+            this.metroLabel22.Size = new System.Drawing.Size(73, 20);
             this.metroLabel22.TabIndex = 5;
             this.metroLabel22.Text = "Rx(Bytes:)";
             this.metroLabel22.UseStyleColors = true;
@@ -2018,8 +1952,8 @@ namespace MetroFramework.WiFiMCU
             // 
             this.txSendBytes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txSendBytes.AutoSize = true;
-            this.txSendBytes.Location = new System.Drawing.Point(355, 800);
-            this.txSendBytes.Margin = new System.Windows.Forms.Padding(4);
+            this.txSendBytes.Location = new System.Drawing.Point(266, 640);
+            this.txSendBytes.Margin = new System.Windows.Forms.Padding(3);
             this.txSendBytes.Name = "txSendBytes";
             this.txSendBytes.Size = new System.Drawing.Size(53, 20);
             this.txSendBytes.TabIndex = 5;
@@ -2030,8 +1964,8 @@ namespace MetroFramework.WiFiMCU
             // 
             this.rxReadBytes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.rxReadBytes.AutoSize = true;
-            this.rxReadBytes.Location = new System.Drawing.Point(543, 800);
-            this.rxReadBytes.Margin = new System.Windows.Forms.Padding(4);
+            this.rxReadBytes.Location = new System.Drawing.Point(407, 640);
+            this.rxReadBytes.Margin = new System.Windows.Forms.Padding(3);
             this.rxReadBytes.Name = "rxReadBytes";
             this.rxReadBytes.Size = new System.Drawing.Size(53, 20);
             this.rxReadBytes.TabIndex = 5;
@@ -2047,8 +1981,7 @@ namespace MetroFramework.WiFiMCU
             this.txtSPBack.ForeColor = System.Drawing.Color.Yellow;
             this.txtSPBack.IconRight = true;
             this.txtSPBack.Lines = new string[0];
-            this.txtSPBack.Location = new System.Drawing.Point(673, 93);
-            this.txtSPBack.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSPBack.Location = new System.Drawing.Point(505, 74);
             this.txtSPBack.MaxLength = 32767;
             this.txtSPBack.Multiline = true;
             this.txtSPBack.Name = "txtSPBack";
@@ -2057,7 +1990,7 @@ namespace MetroFramework.WiFiMCU
             this.txtSPBack.ReadOnly = true;
             this.txtSPBack.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtSPBack.SelectedText = "";
-            this.txtSPBack.Size = new System.Drawing.Size(846, 684);
+            this.txtSPBack.Size = new System.Drawing.Size(634, 547);
             this.txtSPBack.TabIndex = 22;
             this.txtSPBack.UseSelectable = true;
             this.txtSPBack.UseStyleColors = true;
@@ -2076,12 +2009,12 @@ namespace MetroFramework.WiFiMCU
             // MainForm
             // 
             this.ApplyImageInvert = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BackImagePadding = new System.Windows.Forms.Padding(10, 7, 0, 0);
             this.BackMaxSize = 50;
-            this.ClientSize = new System.Drawing.Size(1529, 842);
+            this.ClientSize = new System.Drawing.Size(1147, 674);
             this.Controls.Add(this.txtSP);
             this.Controls.Add(this.comboBoxSerialPort);
             this.Controls.Add(this.comboBoxSerialBaudrate);
@@ -2096,19 +2029,19 @@ namespace MetroFramework.WiFiMCU
             this.Controls.Add(this.metroTextBoxSend);
             this.Controls.Add(this.metroButtonMem);
             this.Controls.Add(this.metroButtonCG);
+            this.Controls.Add(this.metroButtonSupport);
             this.Controls.Add(this.metroButtonTick);
             this.Controls.Add(this.metroLabelCom);
             this.Controls.Add(this.metroTileRestart);
             this.Controls.Add(this.metroTileOpenPort);
             this.Controls.Add(this.metroTileScan);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
-            this.Padding = new System.Windows.Forms.Padding(27, 75, 27, 22);
+            this.Padding = new System.Windows.Forms.Padding(20, 60, 20, 18);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
             this.ShowIcon = false;
             this.StyleManager = this.metroStyleManager;
-            this.Text = "WiFiMCU Studio  V2.0";
+            this.Text = "WiFiMCU Studio  V2.1";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -2265,6 +2198,7 @@ namespace MetroFramework.WiFiMCU
         private MetroProgressSpinner metroProgressSpinner2;
         private MetroLabel metroLabel14;
         private MetroTextBox metroTextBoxInfo;
+        private MetroButton metroButtonSupport;
 
     }
 }

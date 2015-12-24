@@ -1563,5 +1563,10 @@ namespace MetroFramework.WiFiMCU
             sendData2SerialPort("net.send(skt,'" + this.textBoxSendData.Text + "')\r\n");
         }
 
+        private void metroButtonSupport_Click(object sender, EventArgs e)
+        {
+            String url = "http://bbs.doit.am/forum.php?mod=forumdisplay&fid=52";
+            System.Diagnostics.Process.Start(url);
+        }
     }
 }

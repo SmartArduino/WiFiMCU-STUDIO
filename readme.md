@@ -1,4 +1,4 @@
-###Thanks to use WiFiMCU STUDIO tool for WiFiMCU:
+###WiFiMCU STUDIO tool for WiFiMCU:
 https://github.com/SmartArduino/WiFiMCU
 
 WiFiMCU Studio was compiled by Viusal Studio 2012.<br/>
@@ -12,8 +12,9 @@ Doctors of Intelligence & Technology (Doit.am)<br/>
 support@doit.am<br/>
 
 ####Version log<br/>
+#####v2.1 @2015-12-24<br/>
+* Update WiFiMCU Log and support button
 #####v2.0 @2015-12-14<br/>
-(under beta version)<br/>
 * Update to metro theme, Support change theme and color for main dialog
 * Enhance serial port reading function
 * Speed up uploading lua scripts
