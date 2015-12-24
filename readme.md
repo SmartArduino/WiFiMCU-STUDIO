@@ -14,7 +14,7 @@ support@doit.am<br/>
 #### Version log<br/>
 ##### v2.1 @2015-12-24<br/>
 * Update WiFiMCU Log and support button<br/>
-##### v2.0 @2015-12-14<br/>
+* v2.0 @2015-12-14<br/>
 * Update to metro theme, Support change theme and color for main dialog
 * Enhance serial port reading function
 * Speed up uploading lua scripts
